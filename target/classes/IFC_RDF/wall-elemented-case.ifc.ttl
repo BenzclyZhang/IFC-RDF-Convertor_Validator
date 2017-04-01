@@ -1,0 +1,24 @@
+# baseURI: http://linkedbuildingdata.net/ifc/resources20170227_013455/
+# imports: http://ifcowl.openbimstandards.org/IFC4_ADD1
+
+@prefix ifcowl:  <http://ifcowl.openbimstandards.org/IFC4_ADD1#> .
+@prefix inst:  <http://linkedbuildingdata.net/ifc/resources20170227_013455/> .
+@prefix list:  <https://w3id.org/list#> .
+@prefix express:  <https://w3id.org/express#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix ifch:  <http://www.openbim.org/ifcowl/ifcheader#> .
+
+inst:   rdf:type                   owl:Ontology ;
+        owl:imports                ifcowl: ;
+        ifch:description           "'ViewDefinition [notYetAssigned]" ;
+        ifch:implementation_level  "2;1" ;
+        ifch:name                  "ifcwallelementedcase.ifc" ;
+        ifch:time_stamp            "2015-03-13T19:19:38" ;
+        ifch:author                "" ;
+        ifch:organization          "" ;
+        ifch:preprocessor_version  "Constructivity 0.9.8.2" ;
+        ifch:originating_system    "Constructivity 0.9.8.2" ;
+        ifch:authorization         "" ;
+        ifch:schema_identifiers    "IFC4" .

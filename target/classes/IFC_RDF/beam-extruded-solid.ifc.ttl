@@ -1,0 +1,911 @@
+# baseURI: http://linkedbuildingdata.net/ifc/resources20170227_013324/
+# imports: http://ifcowl.openbimstandards.org/IFC4_ADD1
+
+@prefix ifcowl:  <http://ifcowl.openbimstandards.org/IFC4_ADD1#> .
+@prefix inst:  <http://linkedbuildingdata.net/ifc/resources20170227_013324/> .
+@prefix list:  <https://w3id.org/list#> .
+@prefix express:  <https://w3id.org/express#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix ifch:  <http://www.openbim.org/ifcowl/ifcheader#> .
+
+inst:   rdf:type                   owl:Ontology ;
+        owl:imports                ifcowl: ;
+        ifch:description           "ViewDefinition [DesignTransferView_V1.0]" ;
+        ifch:implementation_level  "2;1" ;
+        ifch:name                  "beam_straight_extruded-solid_design-handover-view.ifc" ;
+        ifch:time_stamp            "2014-06-09T14:06:08" ;
+        ifch:author                "Jon Mirtschin" ;
+        ifch:organization          "Geometry Gym" ;
+        ifch:preprocessor_version  "ggGrasshopperIFC" ;
+        ifch:originating_system    "ggGrasshopperIFC" ;
+        ifch:authorization         "None" ;
+        ifch:schema_identifiers    "IFC4" .
+
+inst:12676b13-161e-3696-9977-a621bc8a6a71
+        rdf:type              ifcowl:IfcApplication ;
+        express:hasExpressID  1 ;
+        ifcowl:applicationDeveloper_IfcApplication  inst:6680fff7-e206-3d8d-9cca-5ed34ac03893 .
+
+inst:fcb413cb-cbd9-3dc5-87e5-4bea2f420bc2
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "1.0.46.0" .
+
+inst:12676b13-161e-3696-9977-a621bc8a6a71
+        ifcowl:version_IfcApplication  inst:fcb413cb-cbd9-3dc5-87e5-4bea2f420bc2 .
+
+inst:2df9142d-6092-3f4f-b8b4-98ffe43f608a
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "g Geometry Gym Plug-in for Grasshopper3d" .
+
+inst:12676b13-161e-3696-9977-a621bc8a6a71
+        ifcowl:applicationFullName_IfcApplication  inst:2df9142d-6092-3f4f-b8b4-98ffe43f608a .
+
+inst:21fcd2c5-b226-3199-9576-db4bc6aaf569
+        rdf:type           ifcowl:IfcIdentifier ;
+        express:hasString  "ggGrasshopperIFC" .
+
+inst:12676b13-161e-3696-9977-a621bc8a6a71
+        ifcowl:applicationIdentifier_IfcApplication  inst:21fcd2c5-b226-3199-9576-db4bc6aaf569 .
+
+inst:6680fff7-e206-3d8d-9cca-5ed34ac03893
+        rdf:type              ifcowl:IfcOrganization ;
+        express:hasExpressID  2 .
+
+inst:5f13fece-a0aa-3b89-90e7-1861b865ca71
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "Geometry Gym Pty Ltd" .
+
+inst:6680fff7-e206-3d8d-9cca-5ed34ac03893
+        ifcowl:name_IfcOrganization  inst:5f13fece-a0aa-3b89-90e7-1861b865ca71 .
+
+inst:acb41515-1e8e-3b0f-b973-8438c7288fd4
+        rdf:type              ifcowl:IfcPersonAndOrganization ;
+        express:hasExpressID  3 ;
+        ifcowl:thePerson_IfcPersonAndOrganization  inst:a76e2dfc-452c-3b02-91ec-836744918ce2 ;
+        ifcowl:theOrganization_IfcPersonAndOrganization  inst:38d46152-b1fc-3072-b745-023ccaeabf56 .
+
+inst:a76e2dfc-452c-3b02-91ec-836744918ce2
+        rdf:type              ifcowl:IfcPerson ;
+        express:hasExpressID  4 .
+
+inst:47100ce2-3cf7-36c6-a4d8-f39713059103
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "Mirtschin" .
+
+inst:a76e2dfc-452c-3b02-91ec-836744918ce2
+        ifcowl:familyName_IfcPerson  inst:47100ce2-3cf7-36c6-a4d8-f39713059103 .
+
+inst:59d2c767-b8e6-382f-a284-d0e6688dfc88
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "Jon" .
+
+inst:a76e2dfc-452c-3b02-91ec-836744918ce2
+        ifcowl:givenName_IfcPerson  inst:59d2c767-b8e6-382f-a284-d0e6688dfc88 .
+
+inst:38d46152-b1fc-3072-b745-023ccaeabf56
+        rdf:type              ifcowl:IfcOrganization ;
+        express:hasExpressID  5 .
+
+inst:8b508198-5f86-387a-9bef-119707e5bb39
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "Geometry Gym Pty Ltd" .
+
+inst:38d46152-b1fc-3072-b745-023ccaeabf56
+        ifcowl:name_IfcOrganization  inst:8b508198-5f86-387a-9bef-119707e5bb39 .
+
+inst:52cd806a-35a5-3276-b725-de1b51cbfdd2
+        rdf:type              ifcowl:IfcOwnerHistory ;
+        express:hasExpressID  6 ;
+        ifcowl:owningUser_IfcOwnerHistory  inst:acb41515-1e8e-3b0f-b973-8438c7288fd4 ;
+        ifcowl:owningApplication_IfcOwnerHistory  inst:12676b13-161e-3696-9977-a621bc8a6a71 ;
+        ifcowl:changeAction_IfcOwnerHistory  ifcowl:ADDED .
+
+inst:b4412ee7-71fe-3d4b-a78b-1e3f7b341e84
+        rdf:type            ifcowl:IfcTimeStamp ;
+        express:hasInteger  1402094752 .
+
+inst:52cd806a-35a5-3276-b725-de1b51cbfdd2
+        ifcowl:lastModifiedDate_IfcOwnerHistory  inst:b4412ee7-71fe-3d4b-a78b-1e3f7b341e84 .
+
+inst:60c08120-78b1-3894-899f-e318e7739bea
+        rdf:type            ifcowl:IfcTimeStamp ;
+        express:hasInteger  1402094752 .
+
+inst:52cd806a-35a5-3276-b725-de1b51cbfdd2
+        ifcowl:creationDate_IfcOwnerHistory  inst:60c08120-78b1-3894-899f-e318e7739bea .
+
+inst:81c54d4b-17e5-3e4f-b6b8-93011db4177d
+        rdf:type              ifcowl:IfcCartesianPoint ;
+        express:hasExpressID  7 .
+
+inst:adb33f45-de80-3025-8570-9378bd6b3800
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:81c54d4b-17e5-3e4f-b6b8-93011db4177d
+        ifcowl:coordinates_IfcCartesianPoint  inst:adb33f45-de80-3025-8570-9378bd6b3800 .
+
+inst:f3f03914-fe59-3599-adfc-9b3ed47dfefa
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:499951ec-770d-38ce-b87e-b37577b9ada0
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:f2f14350-c767-3b81-964d-35a8fe0b8aff
+        rdf:type           ifcowl:IfcLengthMeasure ;
+        express:hasDouble  "0.0"^^xsd:double .
+
+inst:adb33f45-de80-3025-8570-9378bd6b3800
+        list:hasContents  inst:f2f14350-c767-3b81-964d-35a8fe0b8aff ;
+        list:hasNext      inst:f3f03914-fe59-3599-adfc-9b3ed47dfefa .
+
+inst:f3f03914-fe59-3599-adfc-9b3ed47dfefa
+        list:hasContents  inst:f2f14350-c767-3b81-964d-35a8fe0b8aff ;
+        list:hasNext      inst:499951ec-770d-38ce-b87e-b37577b9ada0 .
+
+inst:499951ec-770d-38ce-b87e-b37577b9ada0
+        list:hasContents  inst:f2f14350-c767-3b81-964d-35a8fe0b8aff .
+
+inst:e76e68c2-06b4-3f85-a32e-015f0ba0cc4d
+        rdf:type              ifcowl:IfcDirection ;
+        express:hasExpressID  8 .
+
+inst:37bf7ea4-26b0-3275-a1ae-1eb2d922c576
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:e76e68c2-06b4-3f85-a32e-015f0ba0cc4d
+        ifcowl:directionRatios_IfcDirection  inst:37bf7ea4-26b0-3275-a1ae-1eb2d922c576 .
+
+inst:5051b613-2bde-3c85-a471-d84d12b2a4a5
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:4e663361-c3f5-3832-8639-3c46d40965c5
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:6971c81c-8bb0-3587-88ed-c716c49f3a54
+        rdf:type           ifcowl:IfcReal ;
+        express:hasDouble  "1.0"^^xsd:double .
+
+inst:37bf7ea4-26b0-3275-a1ae-1eb2d922c576
+        list:hasContents  inst:6971c81c-8bb0-3587-88ed-c716c49f3a54 ;
+        list:hasNext      inst:5051b613-2bde-3c85-a471-d84d12b2a4a5 .
+
+inst:5051b613-2bde-3c85-a471-d84d12b2a4a5
+        list:hasContents  inst:f2f14350-c767-3b81-964d-35a8fe0b8aff ;
+        list:hasNext      inst:4e663361-c3f5-3832-8639-3c46d40965c5 .
+
+inst:4e663361-c3f5-3832-8639-3c46d40965c5
+        list:hasContents  inst:f2f14350-c767-3b81-964d-35a8fe0b8aff .
+
+inst:1babe808-151b-36c6-9745-edddbbae3283
+        rdf:type              ifcowl:IfcDirection ;
+        express:hasExpressID  9 .
+
+inst:38d2e207-4480-374c-aa70-c9abf8c503a7
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:1babe808-151b-36c6-9745-edddbbae3283
+        ifcowl:directionRatios_IfcDirection  inst:38d2e207-4480-374c-aa70-c9abf8c503a7 .
+
+inst:71315675-9d81-3752-9e5b-aa6d847bb490
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:98ded382-ac3a-33b5-90de-d3fc555f5b18
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:38d2e207-4480-374c-aa70-c9abf8c503a7
+        list:hasContents  inst:f2f14350-c767-3b81-964d-35a8fe0b8aff ;
+        list:hasNext      inst:71315675-9d81-3752-9e5b-aa6d847bb490 .
+
+inst:71315675-9d81-3752-9e5b-aa6d847bb490
+        list:hasContents  inst:6971c81c-8bb0-3587-88ed-c716c49f3a54 ;
+        list:hasNext      inst:98ded382-ac3a-33b5-90de-d3fc555f5b18 .
+
+inst:98ded382-ac3a-33b5-90de-d3fc555f5b18
+        list:hasContents  inst:f2f14350-c767-3b81-964d-35a8fe0b8aff .
+
+inst:90914483-6979-3668-826d-9c1ef3242e23
+        rdf:type              ifcowl:IfcDirection ;
+        express:hasExpressID  10 .
+
+inst:ed65f47f-3328-36cc-95ad-d2c892f07216
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:90914483-6979-3668-826d-9c1ef3242e23
+        ifcowl:directionRatios_IfcDirection  inst:ed65f47f-3328-36cc-95ad-d2c892f07216 .
+
+inst:4b007756-70a3-3fb5-8c3f-e9939b05730c
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:5724f912-b2b5-31e4-b6de-0eba6102ab64
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:ed65f47f-3328-36cc-95ad-d2c892f07216
+        list:hasContents  inst:f2f14350-c767-3b81-964d-35a8fe0b8aff ;
+        list:hasNext      inst:4b007756-70a3-3fb5-8c3f-e9939b05730c .
+
+inst:4b007756-70a3-3fb5-8c3f-e9939b05730c
+        list:hasContents  inst:f2f14350-c767-3b81-964d-35a8fe0b8aff ;
+        list:hasNext      inst:5724f912-b2b5-31e4-b6de-0eba6102ab64 .
+
+inst:5724f912-b2b5-31e4-b6de-0eba6102ab64
+        list:hasContents  inst:6971c81c-8bb0-3587-88ed-c716c49f3a54 .
+
+inst:44ad1c60-533a-3728-9af6-b44e3f66dee2
+        rdf:type                      ifcowl:IfcAxis2Placement3D ;
+        express:hasExpressID          11 ;
+        ifcowl:location_IfcPlacement  inst:81c54d4b-17e5-3e4f-b6b8-93011db4177d ;
+        ifcowl:axis_IfcAxis2Placement3D  inst:90914483-6979-3668-826d-9c1ef3242e23 ;
+        ifcowl:refDirection_IfcAxis2Placement3D  inst:e76e68c2-06b4-3f85-a32e-015f0ba0cc4d .
+
+inst:a4a30861-c5e6-3fd9-9ecd-e08ac13f4cad
+        rdf:type                      ifcowl:IfcAxis2Placement2D ;
+        express:hasExpressID          12 ;
+        ifcowl:location_IfcPlacement  inst:d79dc52a-850d-35de-b044-2a88372cfe4e .
+
+inst:d79dc52a-850d-35de-b044-2a88372cfe4e
+        rdf:type              ifcowl:IfcCartesianPoint ;
+        express:hasExpressID  13 .
+
+inst:9f7c949f-0150-3c45-aaad-491aa4680488
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:d79dc52a-850d-35de-b044-2a88372cfe4e
+        ifcowl:coordinates_IfcCartesianPoint  inst:9f7c949f-0150-3c45-aaad-491aa4680488 .
+
+inst:f1fef3ec-6278-326c-9423-9e46ad7e52b3
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:9f7c949f-0150-3c45-aaad-491aa4680488
+        list:hasContents  inst:f2f14350-c767-3b81-964d-35a8fe0b8aff ;
+        list:hasNext      inst:f1fef3ec-6278-326c-9423-9e46ad7e52b3 .
+
+inst:f1fef3ec-6278-326c-9423-9e46ad7e52b3
+        list:hasContents  inst:f2f14350-c767-3b81-964d-35a8fe0b8aff .
+
+inst:e9b9c946-ed29-3827-82bd-fbc82aca8f9d
+        rdf:type              ifcowl:IfcGeometricRepresentationContext ;
+        express:hasExpressID  14 .
+
+inst:4a69aac3-53b0-3920-8e6f-867b48af909a
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "Model" .
+
+inst:e9b9c946-ed29-3827-82bd-fbc82aca8f9d
+        ifcowl:contextType_IfcRepresentationContext  inst:4a69aac3-53b0-3920-8e6f-867b48af909a .
+
+inst:fee6635a-d27c-3ddd-b363-e6c203d493cb
+        rdf:type            ifcowl:IfcDimensionCount ;
+        express:hasInteger  3 .
+
+inst:e9b9c946-ed29-3827-82bd-fbc82aca8f9d
+        ifcowl:coordinateSpaceDimension_IfcGeometricRepresentationContext  inst:fee6635a-d27c-3ddd-b363-e6c203d493cb .
+
+inst:7422bfb2-2a03-34bf-b610-d742961fc9a8
+        rdf:type           ifcowl:IfcReal ;
+        express:hasDouble  "0.00001"^^xsd:double .
+
+inst:e9b9c946-ed29-3827-82bd-fbc82aca8f9d
+        ifcowl:precision_IfcGeometricRepresentationContext  inst:7422bfb2-2a03-34bf-b610-d742961fc9a8 ;
+        ifcowl:worldCoordinateSystem_IfcGeometricRepresentationContext  inst:0cec36fe-9831-3c3e-b3d7-84653504643f ;
+        ifcowl:trueNorth_IfcGeometricRepresentationContext  inst:46ab4456-18a9-3c1b-8604-912bd461ec4a .
+
+inst:0cec36fe-9831-3c3e-b3d7-84653504643f
+        rdf:type                      ifcowl:IfcAxis2Placement3D ;
+        express:hasExpressID          15 ;
+        ifcowl:location_IfcPlacement  inst:81c54d4b-17e5-3e4f-b6b8-93011db4177d ;
+        ifcowl:axis_IfcAxis2Placement3D  inst:90914483-6979-3668-826d-9c1ef3242e23 ;
+        ifcowl:refDirection_IfcAxis2Placement3D  inst:e76e68c2-06b4-3f85-a32e-015f0ba0cc4d .
+
+inst:46ab4456-18a9-3c1b-8604-912bd461ec4a
+        rdf:type              ifcowl:IfcDirection ;
+        express:hasExpressID  16 .
+
+inst:cf153a2f-230e-381b-9efc-6dd409d0e061
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:46ab4456-18a9-3c1b-8604-912bd461ec4a
+        ifcowl:directionRatios_IfcDirection  inst:cf153a2f-230e-381b-9efc-6dd409d0e061 .
+
+inst:233da530-d411-3c54-b082-6a033e03a56e
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:cf153a2f-230e-381b-9efc-6dd409d0e061
+        list:hasContents  inst:f2f14350-c767-3b81-964d-35a8fe0b8aff ;
+        list:hasNext      inst:233da530-d411-3c54-b082-6a033e03a56e .
+
+inst:233da530-d411-3c54-b082-6a033e03a56e
+        list:hasContents  inst:6971c81c-8bb0-3587-88ed-c716c49f3a54 .
+
+inst:13a36c1e-e71d-34a8-9a58-7dcebfa6dec2
+        rdf:type              ifcowl:IfcGeometricRepresentationSubContext ;
+        express:hasExpressID  17 .
+
+inst:3c7112fd-3e8c-3899-8bff-e6d05df53215
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "Axis" .
+
+inst:13a36c1e-e71d-34a8-9a58-7dcebfa6dec2
+        ifcowl:contextIdentifier_IfcRepresentationContext  inst:3c7112fd-3e8c-3899-8bff-e6d05df53215 .
+
+inst:26c72142-2565-3dd4-9dbf-999b5bd63de9
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "Model" .
+
+inst:13a36c1e-e71d-34a8-9a58-7dcebfa6dec2
+        ifcowl:contextType_IfcRepresentationContext  inst:26c72142-2565-3dd4-9dbf-999b5bd63de9 ;
+        ifcowl:parentContext_IfcGeometricRepresentationSubContext  inst:e9b9c946-ed29-3827-82bd-fbc82aca8f9d ;
+        ifcowl:targetView_IfcGeometricRepresentationSubContext  ifcowl:MODEL_VIEW .
+
+inst:071746bf-3682-399d-8006-ba08bbe8b562
+        rdf:type              ifcowl:IfcGeometricRepresentationSubContext ;
+        express:hasExpressID  18 .
+
+inst:b641ed7c-5d0d-3d51-a4b9-8e9148a42c37
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "Body" .
+
+inst:071746bf-3682-399d-8006-ba08bbe8b562
+        ifcowl:contextIdentifier_IfcRepresentationContext  inst:b641ed7c-5d0d-3d51-a4b9-8e9148a42c37 .
+
+inst:ebd502da-5611-3e84-8cbd-776c24a4b46b
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "Model" .
+
+inst:071746bf-3682-399d-8006-ba08bbe8b562
+        ifcowl:contextType_IfcRepresentationContext  inst:ebd502da-5611-3e84-8cbd-776c24a4b46b ;
+        ifcowl:parentContext_IfcGeometricRepresentationSubContext  inst:e9b9c946-ed29-3827-82bd-fbc82aca8f9d ;
+        ifcowl:targetView_IfcGeometricRepresentationSubContext  ifcowl:MODEL_VIEW .
+
+inst:c4b225e8-1e0e-3528-8cb7-87756516c42c
+        rdf:type                      ifcowl:IfcSIUnit ;
+        express:hasExpressID          19 ;
+        ifcowl:unitType_IfcNamedUnit  ifcowl:LENGTHUNIT ;
+        ifcowl:name_IfcSIUnit         ifcowl:METRE .
+
+inst:0b74026d-5812-3d8f-b38e-80f253855083
+        rdf:type                      ifcowl:IfcSIUnit ;
+        express:hasExpressID          20 ;
+        ifcowl:unitType_IfcNamedUnit  ifcowl:AREAUNIT ;
+        ifcowl:name_IfcSIUnit         ifcowl:SQUARE_METRE .
+
+inst:83fecb34-5e71-39f2-a2d3-0947dec9913d
+        rdf:type                      ifcowl:IfcSIUnit ;
+        express:hasExpressID          21 ;
+        ifcowl:unitType_IfcNamedUnit  ifcowl:VOLUMEUNIT ;
+        ifcowl:name_IfcSIUnit         ifcowl:CUBIC_METRE .
+
+inst:1ec5761e-2998-3c7e-bbf7-753a47c9a47c
+        rdf:type                      ifcowl:IfcSIUnit ;
+        express:hasExpressID          22 ;
+        ifcowl:unitType_IfcNamedUnit  ifcowl:PLANEANGLEUNIT ;
+        ifcowl:name_IfcSIUnit         ifcowl:RADIAN .
+
+inst:4470c557-71ad-3185-a141-53c273afd96b
+        rdf:type                        ifcowl:IfcUnitAssignment ;
+        express:hasExpressID            23 ;
+        ifcowl:units_IfcUnitAssignment  inst:c4b225e8-1e0e-3528-8cb7-87756516c42c ;
+        ifcowl:units_IfcUnitAssignment  inst:0b74026d-5812-3d8f-b38e-80f253855083 ;
+        ifcowl:units_IfcUnitAssignment  inst:83fecb34-5e71-39f2-a2d3-0947dec9913d ;
+        ifcowl:units_IfcUnitAssignment  inst:1ec5761e-2998-3c7e-bbf7-753a47c9a47c .
+
+inst:137d5cba-0f4c-305f-a766-a580663e7ccd
+        rdf:type              ifcowl:IfcBuilding ;
+        express:hasExpressID  24 .
+
+inst:83acbb29-a6c0-3b42-ad57-52f805cd762d
+        rdf:type           ifcowl:IfcGloballyUniqueId ;
+        express:hasString  "3uvY$5FxrCov51rMJmsbC8" .
+
+inst:137d5cba-0f4c-305f-a766-a580663e7ccd
+        ifcowl:globalId_IfcRoot      inst:83acbb29-a6c0-3b42-ad57-52f805cd762d ;
+        ifcowl:ownerHistory_IfcRoot  inst:52cd806a-35a5-3276-b725-de1b51cbfdd2 .
+
+inst:13329248-4d40-364e-82e1-2696c37f4503
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "Grasshopper Building" .
+
+inst:137d5cba-0f4c-305f-a766-a580663e7ccd
+        ifcowl:name_IfcRoot  inst:13329248-4d40-364e-82e1-2696c37f4503 .
+
+inst:d7c4c1cd-c858-315f-8d30-3bd937aa0529
+        rdf:type           ifcowl:IfcText ;
+        express:hasString  "GH Building" .
+
+inst:137d5cba-0f4c-305f-a766-a580663e7ccd
+        ifcowl:description_IfcRoot  inst:d7c4c1cd-c858-315f-8d30-3bd937aa0529 ;
+        ifcowl:objectPlacement_IfcProduct  inst:fd6f1768-ac2c-354b-9410-78490bee3ca1 .
+
+inst:a09be4be-c4cf-32c6-9438-3753c74d0046
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "GH Building" .
+
+inst:137d5cba-0f4c-305f-a766-a580663e7ccd
+        ifcowl:longName_IfcSpatialElement  inst:a09be4be-c4cf-32c6-9438-3753c74d0046 ;
+        ifcowl:compositionType_IfcSpatialStructureElement  ifcowl:ELEMENT .
+
+inst:fd6f1768-ac2c-354b-9410-78490bee3ca1
+        rdf:type              ifcowl:IfcLocalPlacement ;
+        express:hasExpressID  25 ;
+        ifcowl:relativePlacement_IfcLocalPlacement  inst:44ad1c60-533a-3728-9af6-b44e3f66dee2 .
+
+inst:89c41096-79a6-32c8-bf89-19ef3e94d952
+        rdf:type              ifcowl:IfcRelContainedInSpatialStructure ;
+        express:hasExpressID  26 .
+
+inst:6e39f489-df25-39f7-b06c-101d986a9b0b
+        rdf:type           ifcowl:IfcGloballyUniqueId ;
+        express:hasString  "25sZnrub12qP5H_5APKy0v" .
+
+inst:89c41096-79a6-32c8-bf89-19ef3e94d952
+        ifcowl:globalId_IfcRoot      inst:6e39f489-df25-39f7-b06c-101d986a9b0b ;
+        ifcowl:ownerHistory_IfcRoot  inst:52cd806a-35a5-3276-b725-de1b51cbfdd2 .
+
+inst:2839267a-81ba-3041-9ecd-d4933a2228c1
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "Building" .
+
+inst:89c41096-79a6-32c8-bf89-19ef3e94d952
+        ifcowl:name_IfcRoot  inst:2839267a-81ba-3041-9ecd-d4933a2228c1 .
+
+inst:8bffd588-96f6-3a91-ac32-8ecd4634f021
+        rdf:type           ifcowl:IfcText ;
+        express:hasString  "Building Container for Elements" .
+
+inst:89c41096-79a6-32c8-bf89-19ef3e94d952
+        ifcowl:description_IfcRoot  inst:8bffd588-96f6-3a91-ac32-8ecd4634f021 ;
+        ifcowl:relatedElements_IfcRelContainedInSpatialStructure  inst:1b9d331a-3add-3d2f-a000-0b84548e0333 ;
+        ifcowl:relatingStructure_IfcRelContainedInSpatialStructure  inst:137d5cba-0f4c-305f-a766-a580663e7ccd .
+
+inst:4eaeb31a-8be7-3a25-a3cb-37282919d05f
+        rdf:type              ifcowl:IfcProject ;
+        express:hasExpressID  30 .
+
+inst:9a9ad2fb-2633-3363-8681-c567a3122133
+        rdf:type           ifcowl:IfcGloballyUniqueId ;
+        express:hasString  "0zEhknNpfA1QzjlUTNMGcN" .
+
+inst:4eaeb31a-8be7-3a25-a3cb-37282919d05f
+        ifcowl:globalId_IfcRoot      inst:9a9ad2fb-2633-3363-8681-c567a3122133 ;
+        ifcowl:ownerHistory_IfcRoot  inst:52cd806a-35a5-3276-b725-de1b51cbfdd2 .
+
+inst:3e497bba-3af9-32ad-acd8-83c34915454c
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "Grasshopper Project" .
+
+inst:4eaeb31a-8be7-3a25-a3cb-37282919d05f
+        ifcowl:name_IfcRoot  inst:3e497bba-3af9-32ad-acd8-83c34915454c .
+
+inst:b56c956a-df15-321d-860e-9c422a50f063
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "Grasshopper Project" .
+
+inst:4eaeb31a-8be7-3a25-a3cb-37282919d05f
+        ifcowl:longName_IfcContext  inst:b56c956a-df15-321d-860e-9c422a50f063 .
+
+inst:6278eb28-c480-3471-acd3-1c363de9573b
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "" .
+
+inst:4eaeb31a-8be7-3a25-a3cb-37282919d05f
+        ifcowl:phase_IfcContext  inst:6278eb28-c480-3471-acd3-1c363de9573b ;
+        ifcowl:representationContexts_IfcContext  inst:e9b9c946-ed29-3827-82bd-fbc82aca8f9d ;
+        ifcowl:unitsInContext_IfcContext  inst:4470c557-71ad-3185-a141-53c273afd96b .
+
+inst:f48412bb-f0f4-35a4-884c-43ecbfa1f2b1
+        rdf:type              ifcowl:IfcRelAggregates ;
+        express:hasExpressID  31 .
+
+inst:60e15187-81b1-39f9-b6e9-0fb38d6096b4
+        rdf:type           ifcowl:IfcGloballyUniqueId ;
+        express:hasString  "2CCag_fEvEbuI7aoleu65c" .
+
+inst:f48412bb-f0f4-35a4-884c-43ecbfa1f2b1
+        ifcowl:globalId_IfcRoot      inst:60e15187-81b1-39f9-b6e9-0fb38d6096b4 ;
+        ifcowl:ownerHistory_IfcRoot  inst:52cd806a-35a5-3276-b725-de1b51cbfdd2 .
+
+inst:3985e992-b9df-35a5-9988-89dd5e312fca
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "Project Container" .
+
+inst:f48412bb-f0f4-35a4-884c-43ecbfa1f2b1
+        ifcowl:name_IfcRoot  inst:3985e992-b9df-35a5-9988-89dd5e312fca .
+
+inst:28cecb1a-87e1-3c8d-b29b-fd54e1ae939b
+        rdf:type           ifcowl:IfcText ;
+        express:hasString  "Project Container for Buildings" .
+
+inst:f48412bb-f0f4-35a4-884c-43ecbfa1f2b1
+        ifcowl:description_IfcRoot  inst:28cecb1a-87e1-3c8d-b29b-fd54e1ae939b ;
+        ifcowl:relatingObject_IfcRelAggregates  inst:4eaeb31a-8be7-3a25-a3cb-37282919d05f ;
+        ifcowl:relatedObjects_IfcRelAggregates  inst:137d5cba-0f4c-305f-a766-a580663e7ccd .
+
+inst:e36a9093-6233-3e44-b62e-345e1644cc5d
+        rdf:type              ifcowl:IfcMaterial ;
+        express:hasExpressID  61 .
+
+inst:9664fdcb-0d02-316f-ae45-22736ef939f2
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "S355JR" .
+
+inst:e36a9093-6233-3e44-b62e-345e1644cc5d
+        ifcowl:name_IfcMaterial  inst:9664fdcb-0d02-316f-ae45-22736ef939f2 .
+
+inst:f96ecc9d-39b7-3a71-8635-4740594c7bf3
+        rdf:type              ifcowl:IfcMaterialProfile ;
+        express:hasExpressID  64 .
+
+inst:31ebcb51-31dc-3497-ae3c-d5e44d4c4fa2
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "IPE600" .
+
+inst:f96ecc9d-39b7-3a71-8635-4740594c7bf3
+        ifcowl:name_IfcMaterialProfile  inst:31ebcb51-31dc-3497-ae3c-d5e44d4c4fa2 ;
+        ifcowl:material_IfcMaterialProfile  inst:e36a9093-6233-3e44-b62e-345e1644cc5d ;
+        ifcowl:profile_IfcMaterialProfile  inst:d0f78a9a-cc76-3259-9614-22cd12fd323d .
+
+inst:328cf42c-4465-3b6a-bf76-33988d46d0ef
+        rdf:type           ifcowl:IfcNormalisedRatioMeasure ;
+        express:hasDouble  "0.0"^^xsd:double .
+
+inst:f96ecc9d-39b7-3a71-8635-4740594c7bf3
+        ifcowl:priority_IfcMaterialProfile  inst:328cf42c-4465-3b6a-bf76-33988d46d0ef .
+
+inst:29f8650f-a13d-3ebd-a25d-f99c0b359c3f
+        rdf:type              ifcowl:IfcMaterialProfileSet ;
+        express:hasExpressID  66 .
+
+inst:6d151cde-7ae7-350c-967a-d1a6f98813ee
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "IPE600" .
+
+inst:29f8650f-a13d-3ebd-a25d-f99c0b359c3f
+        ifcowl:name_IfcMaterialProfileSet  inst:6d151cde-7ae7-350c-967a-d1a6f98813ee .
+
+inst:1a2c996c-5ec9-3965-a50d-458aca922d49
+        rdf:type  ifcowl:IfcMaterialProfile_List .
+
+inst:29f8650f-a13d-3ebd-a25d-f99c0b359c3f
+        ifcowl:materialProfiles_IfcMaterialProfileSet  inst:1a2c996c-5ec9-3965-a50d-458aca922d49 .
+
+inst:1a2c996c-5ec9-3965-a50d-458aca922d49
+        list:hasContents  inst:f96ecc9d-39b7-3a71-8635-4740594c7bf3 .
+
+inst:cc0d6842-d90c-35bd-8973-a772bb94a0b2
+        rdf:type              ifcowl:IfcRelAssociatesMaterial ;
+        express:hasExpressID  67 .
+
+inst:5992cfa3-f54b-3f91-a916-6b912330ca46
+        rdf:type           ifcowl:IfcGloballyUniqueId ;
+        express:hasString  "3PFUE_ra50QPK6oFLEA8Ou" .
+
+inst:cc0d6842-d90c-35bd-8973-a772bb94a0b2
+        ifcowl:globalId_IfcRoot      inst:5992cfa3-f54b-3f91-a916-6b912330ca46 ;
+        ifcowl:ownerHistory_IfcRoot  inst:52cd806a-35a5-3276-b725-de1b51cbfdd2 .
+
+inst:070e528d-5e08-3a78-9a0c-74af39d98ebd
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "MatAssoc" .
+
+inst:cc0d6842-d90c-35bd-8973-a772bb94a0b2
+        ifcowl:name_IfcRoot  inst:070e528d-5e08-3a78-9a0c-74af39d98ebd .
+
+inst:8accd4b8-fcff-3d6f-bdbe-ab3811580890
+        rdf:type           ifcowl:IfcText ;
+        express:hasString  "Material Associates" .
+
+inst:cc0d6842-d90c-35bd-8973-a772bb94a0b2
+        ifcowl:description_IfcRoot  inst:8accd4b8-fcff-3d6f-bdbe-ab3811580890 ;
+        ifcowl:relatedObjects_IfcRelAssociates  inst:2b7a765e-9331-3958-9ff2-77b5ff175cb4 ;
+        ifcowl:relatingMaterial_IfcRelAssociatesMaterial  inst:29f8650f-a13d-3ebd-a25d-f99c0b359c3f .
+
+inst:2b7a765e-9331-3958-9ff2-77b5ff175cb4
+        rdf:type              ifcowl:IfcBeamType ;
+        express:hasExpressID  68 .
+
+inst:49d99bb7-c8f0-30e5-b01f-98b00c785187
+        rdf:type           ifcowl:IfcGloballyUniqueId ;
+        express:hasString  "2CyAyxh0X9FRePLOg4w1qS" .
+
+inst:2b7a765e-9331-3958-9ff2-77b5ff175cb4
+        ifcowl:globalId_IfcRoot      inst:49d99bb7-c8f0-30e5-b01f-98b00c785187 ;
+        ifcowl:ownerHistory_IfcRoot  inst:52cd806a-35a5-3276-b725-de1b51cbfdd2 .
+
+inst:c95840eb-0c3c-300c-abe7-fdd0fdc680d7
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "IPE600" .
+
+inst:2b7a765e-9331-3958-9ff2-77b5ff175cb4
+        ifcowl:name_IfcRoot  inst:c95840eb-0c3c-300c-abe7-fdd0fdc680d7 ;
+        ifcowl:predefinedType_IfcBeamType  ifcowl:BEAM .
+
+inst:2e9979ed-9ae0-3e65-b4e7-e3a1bcf651b4
+        rdf:type              ifcowl:IfcRelDefinesByType ;
+        express:hasExpressID  69 .
+
+inst:8393d3b4-b89e-3db5-b457-b3363d3d3686
+        rdf:type           ifcowl:IfcGloballyUniqueId ;
+        express:hasString  "0a3XGGD6DDjx7w$U90jGcM" .
+
+inst:2e9979ed-9ae0-3e65-b4e7-e3a1bcf651b4
+        ifcowl:globalId_IfcRoot      inst:8393d3b4-b89e-3db5-b457-b3363d3d3686 ;
+        ifcowl:ownerHistory_IfcRoot  inst:52cd806a-35a5-3276-b725-de1b51cbfdd2 .
+
+inst:9df34ba2-0710-3ce6-85c2-036aff4f7d70
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "IPE600" .
+
+inst:2e9979ed-9ae0-3e65-b4e7-e3a1bcf651b4
+        ifcowl:name_IfcRoot  inst:9df34ba2-0710-3ce6-85c2-036aff4f7d70 ;
+        ifcowl:relatedObjects_IfcRelDefinesByType  inst:1b9d331a-3add-3d2f-a000-0b84548e0333 ;
+        ifcowl:relatingType_IfcRelDefinesByType  inst:2b7a765e-9331-3958-9ff2-77b5ff175cb4 .
+
+inst:1b9d331a-3add-3d2f-a000-0b84548e0333
+        rdf:type              ifcowl:IfcBeamStandardCase ;
+        express:hasExpressID  70 .
+
+inst:bf120c5b-9968-3ea4-8f1f-56245bdaa76a
+        rdf:type           ifcowl:IfcGloballyUniqueId ;
+        express:hasString  "3v1174zor6w9secwnbuYk1" .
+
+inst:1b9d331a-3add-3d2f-a000-0b84548e0333
+        ifcowl:globalId_IfcRoot      inst:bf120c5b-9968-3ea4-8f1f-56245bdaa76a ;
+        ifcowl:ownerHistory_IfcRoot  inst:52cd806a-35a5-3276-b725-de1b51cbfdd2 ;
+        ifcowl:objectPlacement_IfcProduct  inst:102f242e-0cda-38e1-b2ec-8a79e8ab6234 ;
+        ifcowl:representation_IfcProduct  inst:7f4ca111-9963-3255-976f-19759a877bc6 .
+
+inst:7d17fe3e-b953-394b-9d7c-dbd93f437935
+        rdf:type              ifcowl:IfcMaterialProfileSetUsage ;
+        express:hasExpressID  71 ;
+        ifcowl:forProfileSet_IfcMaterialProfileSetUsage  inst:29f8650f-a13d-3ebd-a25d-f99c0b359c3f .
+
+inst:28f38c12-de1e-36ba-b5df-99304ba8364f
+        rdf:type            ifcowl:IfcCardinalPointReference ;
+        express:hasInteger  5 .
+
+inst:7d17fe3e-b953-394b-9d7c-dbd93f437935
+        ifcowl:cardinalPoint_IfcMaterialProfileSetUsage  inst:28f38c12-de1e-36ba-b5df-99304ba8364f .
+
+inst:67fbb7fa-0cb9-3e38-8ea9-bdecda78088c
+        rdf:type              ifcowl:IfcRelAssociatesMaterial ;
+        express:hasExpressID  72 .
+
+inst:07ca8ec2-11ef-31fd-90c0-a93399deea25
+        rdf:type           ifcowl:IfcGloballyUniqueId ;
+        express:hasString  "09XSzlrVbBaPJrUqRqW_4D" .
+
+inst:67fbb7fa-0cb9-3e38-8ea9-bdecda78088c
+        ifcowl:globalId_IfcRoot      inst:07ca8ec2-11ef-31fd-90c0-a93399deea25 ;
+        ifcowl:ownerHistory_IfcRoot  inst:52cd806a-35a5-3276-b725-de1b51cbfdd2 .
+
+inst:01735852-ad60-374c-9654-0342d0ff3795
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "MatAssoc" .
+
+inst:67fbb7fa-0cb9-3e38-8ea9-bdecda78088c
+        ifcowl:name_IfcRoot  inst:01735852-ad60-374c-9654-0342d0ff3795 .
+
+inst:5a50a376-0878-3537-a23f-a551f3ad0681
+        rdf:type           ifcowl:IfcText ;
+        express:hasString  "Material Associates" .
+
+inst:67fbb7fa-0cb9-3e38-8ea9-bdecda78088c
+        ifcowl:description_IfcRoot  inst:5a50a376-0878-3537-a23f-a551f3ad0681 ;
+        ifcowl:relatedObjects_IfcRelAssociates  inst:1b9d331a-3add-3d2f-a000-0b84548e0333 ;
+        ifcowl:relatingMaterial_IfcRelAssociatesMaterial  inst:7d17fe3e-b953-394b-9d7c-dbd93f437935 .
+
+inst:102f242e-0cda-38e1-b2ec-8a79e8ab6234
+        rdf:type              ifcowl:IfcLocalPlacement ;
+        express:hasExpressID  73 ;
+        ifcowl:relativePlacement_IfcLocalPlacement  inst:26d503e9-8f3a-3da6-a84d-4e5435f27e80 .
+
+inst:26d503e9-8f3a-3da6-a84d-4e5435f27e80
+        rdf:type                      ifcowl:IfcAxis2Placement3D ;
+        express:hasExpressID          74 ;
+        ifcowl:location_IfcPlacement  inst:81c54d4b-17e5-3e4f-b6b8-93011db4177d ;
+        ifcowl:axis_IfcAxis2Placement3D  inst:1babe808-151b-36c6-9745-edddbbae3283 ;
+        ifcowl:refDirection_IfcAxis2Placement3D  inst:28935084-dfc6-3a16-ad16-66c4d6220498 .
+
+inst:28935084-dfc6-3a16-ad16-66c4d6220498
+        rdf:type              ifcowl:IfcDirection ;
+        express:hasExpressID  75 .
+
+inst:a3659929-7c56-3b72-9b40-7a7b62646b59
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:28935084-dfc6-3a16-ad16-66c4d6220498
+        ifcowl:directionRatios_IfcDirection  inst:a3659929-7c56-3b72-9b40-7a7b62646b59 .
+
+inst:12f87196-c9bd-3688-887e-5b05ae1e4a52
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:99186a6b-9876-37a5-9a19-89b7880ed7be
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:07956a74-735e-3008-8f52-be5349bb6b57
+        rdf:type           ifcowl:IfcReal ;
+        express:hasDouble  "-1.0"^^xsd:double .
+
+inst:a3659929-7c56-3b72-9b40-7a7b62646b59
+        list:hasContents  inst:07956a74-735e-3008-8f52-be5349bb6b57 ;
+        list:hasNext      inst:12f87196-c9bd-3688-887e-5b05ae1e4a52 .
+
+inst:12f87196-c9bd-3688-887e-5b05ae1e4a52
+        list:hasContents  inst:328cf42c-4465-3b6a-bf76-33988d46d0ef ;
+        list:hasNext      inst:99186a6b-9876-37a5-9a19-89b7880ed7be .
+
+inst:99186a6b-9876-37a5-9a19-89b7880ed7be
+        list:hasContents  inst:328cf42c-4465-3b6a-bf76-33988d46d0ef .
+
+inst:0ea52b6b-dfd8-382d-a93a-8d0a990a7b3e
+        rdf:type              ifcowl:IfcCartesianPoint ;
+        express:hasExpressID  76 .
+
+inst:24ac3b31-49a8-3a3e-8cd5-bb9090eee568
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:0ea52b6b-dfd8-382d-a93a-8d0a990a7b3e
+        ifcowl:coordinates_IfcCartesianPoint  inst:24ac3b31-49a8-3a3e-8cd5-bb9090eee568 .
+
+inst:0a1a443f-7b9b-34ec-bf9f-efe748731f0d
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:5e34fe5b-3711-30aa-8f01-cf619d5c180b
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:24ac3b31-49a8-3a3e-8cd5-bb9090eee568
+        list:hasContents  inst:328cf42c-4465-3b6a-bf76-33988d46d0ef ;
+        list:hasNext      inst:0a1a443f-7b9b-34ec-bf9f-efe748731f0d .
+
+inst:0a1a443f-7b9b-34ec-bf9f-efe748731f0d
+        list:hasContents  inst:328cf42c-4465-3b6a-bf76-33988d46d0ef ;
+        list:hasNext      inst:5e34fe5b-3711-30aa-8f01-cf619d5c180b .
+
+inst:272ead8f-8eb5-346b-8f7e-a0d083e25726
+        rdf:type           ifcowl:IfcLengthMeasure ;
+        express:hasDouble  "10.0"^^xsd:double .
+
+inst:5e34fe5b-3711-30aa-8f01-cf619d5c180b
+        list:hasContents  inst:272ead8f-8eb5-346b-8f7e-a0d083e25726 .
+
+inst:70d4afd0-5376-32ce-9090-30ff8c5a6ca7
+        rdf:type              ifcowl:IfcPolyline ;
+        express:hasExpressID  77 .
+
+inst:4578b10b-cccd-3278-b429-1c63a42232a0
+        rdf:type  ifcowl:IfcCartesianPoint_List .
+
+inst:70d4afd0-5376-32ce-9090-30ff8c5a6ca7
+        ifcowl:points_IfcPolyline  inst:4578b10b-cccd-3278-b429-1c63a42232a0 .
+
+inst:188a3c1c-ec1a-39d8-857e-211ea46185ae
+        rdf:type  ifcowl:IfcCartesianPoint_List .
+
+inst:4578b10b-cccd-3278-b429-1c63a42232a0
+        list:hasContents  inst:81c54d4b-17e5-3e4f-b6b8-93011db4177d ;
+        list:hasNext      inst:188a3c1c-ec1a-39d8-857e-211ea46185ae .
+
+inst:188a3c1c-ec1a-39d8-857e-211ea46185ae
+        list:hasContents  inst:0ea52b6b-dfd8-382d-a93a-8d0a990a7b3e .
+
+inst:f2b4c59b-5b9e-36ac-ba22-885444615cf0
+        rdf:type              ifcowl:IfcShapeRepresentation ;
+        express:hasExpressID  78 ;
+        ifcowl:contextOfItems_IfcRepresentation  inst:13a36c1e-e71d-34a8-9a58-7dcebfa6dec2 .
+
+inst:e077a286-7fc0-39a4-ba27-97458f7644b6
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "Axis" .
+
+inst:f2b4c59b-5b9e-36ac-ba22-885444615cf0
+        ifcowl:representationIdentifier_IfcRepresentation  inst:e077a286-7fc0-39a4-ba27-97458f7644b6 .
+
+inst:d3784251-ea6d-351c-95c0-42c0c5182b68
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "Curve3D" .
+
+inst:f2b4c59b-5b9e-36ac-ba22-885444615cf0
+        ifcowl:representationType_IfcRepresentation  inst:d3784251-ea6d-351c-95c0-42c0c5182b68 ;
+        ifcowl:items_IfcRepresentation  inst:70d4afd0-5376-32ce-9090-30ff8c5a6ca7 .
+
+inst:b8cd1503-b46f-30af-a6f2-f31cf212ff2f
+        rdf:type              ifcowl:IfcExtrudedAreaSolid ;
+        express:hasExpressID  79 ;
+        ifcowl:sweptArea_IfcSweptAreaSolid  inst:d0f78a9a-cc76-3259-9614-22cd12fd323d ;
+        ifcowl:extrudedDirection_IfcExtrudedAreaSolid  inst:90914483-6979-3668-826d-9c1ef3242e23 .
+
+inst:4e1ca48f-5a38-38d9-92cf-c29789cd549f
+        rdf:type           ifcowl:IfcPositiveLengthMeasure ;
+        express:hasDouble  "10.0"^^xsd:double .
+
+inst:b8cd1503-b46f-30af-a6f2-f31cf212ff2f
+        ifcowl:depth_IfcExtrudedAreaSolid  inst:4e1ca48f-5a38-38d9-92cf-c29789cd549f .
+
+inst:057b5470-a7c0-343c-b57d-3f568d05cbdf
+        rdf:type              ifcowl:IfcShapeRepresentation ;
+        express:hasExpressID  80 ;
+        ifcowl:contextOfItems_IfcRepresentation  inst:071746bf-3682-399d-8006-ba08bbe8b562 .
+
+inst:70a6b165-b68a-3318-a5ad-1aaf07ac9f3c
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "Body" .
+
+inst:057b5470-a7c0-343c-b57d-3f568d05cbdf
+        ifcowl:representationIdentifier_IfcRepresentation  inst:70a6b165-b68a-3318-a5ad-1aaf07ac9f3c .
+
+inst:4a3c3931-2351-3abd-86a0-1b5fa0dc5d99
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "SweptSolid" .
+
+inst:057b5470-a7c0-343c-b57d-3f568d05cbdf
+        ifcowl:representationType_IfcRepresentation  inst:4a3c3931-2351-3abd-86a0-1b5fa0dc5d99 ;
+        ifcowl:items_IfcRepresentation  inst:b8cd1503-b46f-30af-a6f2-f31cf212ff2f .
+
+inst:7f4ca111-9963-3255-976f-19759a877bc6
+        rdf:type              ifcowl:IfcProductDefinitionShape ;
+        express:hasExpressID  81 .
+
+inst:b4813c3d-d5b1-3a12-aaf7-c7eab414cc29
+        rdf:type  ifcowl:IfcRepresentation_List .
+
+inst:7f4ca111-9963-3255-976f-19759a877bc6
+        ifcowl:representations_IfcProductRepresentation  inst:b4813c3d-d5b1-3a12-aaf7-c7eab414cc29 .
+
+inst:95c92735-98ee-3813-aa63-af62f8a448c7
+        rdf:type  ifcowl:IfcRepresentation_List .
+
+inst:b4813c3d-d5b1-3a12-aaf7-c7eab414cc29
+        list:hasContents  inst:f2b4c59b-5b9e-36ac-ba22-885444615cf0 ;
+        list:hasNext      inst:95c92735-98ee-3813-aa63-af62f8a448c7 .
+
+inst:95c92735-98ee-3813-aa63-af62f8a448c7
+        list:hasContents  inst:057b5470-a7c0-343c-b57d-3f568d05cbdf .
+
+inst:d0f78a9a-cc76-3259-9614-22cd12fd323d
+        rdf:type              ifcowl:IfcIShapeProfileDef ;
+        express:hasExpressID  90 ;
+        ifcowl:profileType_IfcProfileDef  ifcowl:AREA .
+
+inst:bee66a1a-02a1-326f-bff0-b7ea564b5d69
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "IPE600" .
+
+inst:d0f78a9a-cc76-3259-9614-22cd12fd323d
+        ifcowl:profileName_IfcProfileDef  inst:bee66a1a-02a1-326f-bff0-b7ea564b5d69 ;
+        ifcowl:position_IfcParameterizedProfileDef  inst:a4a30861-c5e6-3fd9-9ecd-e08ac13f4cad .
+
+inst:5c741ec7-2335-3566-90a4-e54d8d6e5ac1
+        rdf:type           ifcowl:IfcPositiveLengthMeasure ;
+        express:hasDouble  "0.22"^^xsd:double .
+
+inst:d0f78a9a-cc76-3259-9614-22cd12fd323d
+        ifcowl:overallWidth_IfcIShapeProfileDef  inst:5c741ec7-2335-3566-90a4-e54d8d6e5ac1 .
+
+inst:81b9342f-2e1e-3eaa-b1e3-10deb199461b
+        rdf:type           ifcowl:IfcPositiveLengthMeasure ;
+        express:hasDouble  "0.6"^^xsd:double .
+
+inst:d0f78a9a-cc76-3259-9614-22cd12fd323d
+        ifcowl:overallDepth_IfcIShapeProfileDef  inst:81b9342f-2e1e-3eaa-b1e3-10deb199461b .
+
+inst:4853e1d0-bb6b-3079-8daf-7d3538a0ddd8
+        rdf:type           ifcowl:IfcPositiveLengthMeasure ;
+        express:hasDouble  "0.012"^^xsd:double .
+
+inst:d0f78a9a-cc76-3259-9614-22cd12fd323d
+        ifcowl:webThickness_IfcIShapeProfileDef  inst:4853e1d0-bb6b-3079-8daf-7d3538a0ddd8 .
+
+inst:0efc0489-ada0-34a1-8c79-1c51544255d6
+        rdf:type           ifcowl:IfcPositiveLengthMeasure ;
+        express:hasDouble  "0.019"^^xsd:double .
+
+inst:d0f78a9a-cc76-3259-9614-22cd12fd323d
+        ifcowl:flangeThickness_IfcIShapeProfileDef  inst:0efc0489-ada0-34a1-8c79-1c51544255d6 .
+
+inst:8ae12453-995d-381a-ab60-bfe6753f6560
+        rdf:type           ifcowl:IfcNonNegativeLengthMeasure ;
+        express:hasDouble  "0.024"^^xsd:double .
+
+inst:d0f78a9a-cc76-3259-9614-22cd12fd323d
+        ifcowl:filletRadius_IfcIShapeProfileDef  inst:8ae12453-995d-381a-ab60-bfe6753f6560 .

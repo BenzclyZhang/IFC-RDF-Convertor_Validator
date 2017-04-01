@@ -1,0 +1,1207 @@
+# baseURI: http://linkedbuildingdata.net/ifc/resources20170227_013343/
+# imports: http://ifcowl.openbimstandards.org/IFC4_ADD1
+
+@prefix ifcowl:  <http://ifcowl.openbimstandards.org/IFC4_ADD1#> .
+@prefix inst:  <http://linkedbuildingdata.net/ifc/resources20170227_013343/> .
+@prefix list:  <https://w3id.org/list#> .
+@prefix express:  <https://w3id.org/express#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix ifch:  <http://www.openbim.org/ifcowl/ifcheader#> .
+
+inst:   rdf:type                   owl:Ontology ;
+        owl:imports                ifcowl: ;
+        ifch:description           "ViewDefinition [notYetAssigned]" ;
+        ifch:description           "Comment [manual creation of example file]" ;
+        ifch:implementation_level  "2;1" ;
+        ifch:name                  "IfcBuildingElementProxy_Tessellation.ifc" ;
+        ifch:time_stamp            "2012-07-04T18:00:00" ;
+        ifch:author                "Thomas Liebich" ;
+        ifch:organization          "buildingSMART International" ;
+        ifch:preprocessor_version  "IFC text editor" ;
+        ifch:originating_system    "IFC text editor" ;
+        ifch:authorization         "reference file created for the IFC4 specification" ;
+        ifch:schema_identifiers    "IFC4" .
+
+inst:7cd8331c-0064-3a40-8fae-32c044e1b0e1
+        rdf:type              ifcowl:IfcProject ;
+        express:hasExpressID  100 .
+
+inst:0e3788aa-3b15-3ecc-a245-c2be20a75e4c
+        rdf:type           ifcowl:IfcGloballyUniqueId ;
+        express:hasString  "0xScRe4drECQ4DMSqUjd6d" .
+
+inst:7cd8331c-0064-3a40-8fae-32c044e1b0e1
+        ifcowl:globalId_IfcRoot      inst:0e3788aa-3b15-3ecc-a245-c2be20a75e4c ;
+        ifcowl:ownerHistory_IfcRoot  inst:9361cd68-53c4-336c-bd6a-bb5c405c0007 .
+
+inst:5ef6f2a3-d9d8-38c8-9e7b-b5dee2f66cff
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "proxy with tessellation" .
+
+inst:7cd8331c-0064-3a40-8fae-32c044e1b0e1
+        ifcowl:name_IfcRoot  inst:5ef6f2a3-d9d8-38c8-9e7b-b5dee2f66cff ;
+        ifcowl:representationContexts_IfcContext  inst:6d8bf77c-79cb-3983-9d92-365bbd88e1da ;
+        ifcowl:unitsInContext_IfcContext  inst:d534f705-3b1a-3d83-802a-20712d43a3e5 .
+
+inst:9361cd68-53c4-336c-bd6a-bb5c405c0007
+        rdf:type              ifcowl:IfcOwnerHistory ;
+        express:hasExpressID  110 ;
+        ifcowl:owningUser_IfcOwnerHistory  inst:bbb53dff-284b-3af9-b862-1095bd336428 ;
+        ifcowl:owningApplication_IfcOwnerHistory  inst:9932acd8-3664-3267-b1a4-971418d6d29f ;
+        ifcowl:changeAction_IfcOwnerHistory  ifcowl:ADDED .
+
+inst:e309187e-15f3-35be-929a-15cc5631dfaf
+        rdf:type            ifcowl:IfcTimeStamp ;
+        express:hasInteger  1320688800 .
+
+inst:9361cd68-53c4-336c-bd6a-bb5c405c0007
+        ifcowl:lastModifiedDate_IfcOwnerHistory  inst:e309187e-15f3-35be-929a-15cc5631dfaf .
+
+inst:a2434c36-c0cf-3389-b7dd-1d2bf4092ca2
+        rdf:type            ifcowl:IfcTimeStamp ;
+        express:hasInteger  1320688800 .
+
+inst:9361cd68-53c4-336c-bd6a-bb5c405c0007
+        ifcowl:creationDate_IfcOwnerHistory  inst:a2434c36-c0cf-3389-b7dd-1d2bf4092ca2 .
+
+inst:bbb53dff-284b-3af9-b862-1095bd336428
+        rdf:type              ifcowl:IfcPersonAndOrganization ;
+        express:hasExpressID  111 ;
+        ifcowl:thePerson_IfcPersonAndOrganization  inst:b73a1336-f67f-378d-aa74-f60ed496a57e ;
+        ifcowl:theOrganization_IfcPersonAndOrganization  inst:f52f9ba0-f492-3fe1-a60b-0c99366fd7d1 .
+
+inst:b73a1336-f67f-378d-aa74-f60ed496a57e
+        rdf:type              ifcowl:IfcPerson ;
+        express:hasExpressID  112 .
+
+inst:87532930-08ea-3c02-b436-f5310d2378c5
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "Liebich" .
+
+inst:b73a1336-f67f-378d-aa74-f60ed496a57e
+        ifcowl:familyName_IfcPerson  inst:87532930-08ea-3c02-b436-f5310d2378c5 .
+
+inst:47b743a9-397d-371e-9abf-b72c445385d7
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "Thomas" .
+
+inst:b73a1336-f67f-378d-aa74-f60ed496a57e
+        ifcowl:givenName_IfcPerson  inst:47b743a9-397d-371e-9abf-b72c445385d7 .
+
+inst:f52f9ba0-f492-3fe1-a60b-0c99366fd7d1
+        rdf:type              ifcowl:IfcOrganization ;
+        express:hasExpressID  113 .
+
+inst:059c12ce-43fa-3b91-9c0b-81ddbdfd5eb6
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "buildingSMART International" .
+
+inst:f52f9ba0-f492-3fe1-a60b-0c99366fd7d1
+        ifcowl:name_IfcOrganization  inst:059c12ce-43fa-3b91-9c0b-81ddbdfd5eb6 .
+
+inst:9932acd8-3664-3267-b1a4-971418d6d29f
+        rdf:type              ifcowl:IfcApplication ;
+        express:hasExpressID  115 ;
+        ifcowl:applicationDeveloper_IfcApplication  inst:f52f9ba0-f492-3fe1-a60b-0c99366fd7d1 .
+
+inst:5469e78a-b165-30e2-8198-30f082ebd076
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "1.0" .
+
+inst:9932acd8-3664-3267-b1a4-971418d6d29f
+        ifcowl:version_IfcApplication  inst:5469e78a-b165-30e2-8198-30f082ebd076 .
+
+inst:2ad24f97-7fb7-3211-a045-886df8fd2739
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "IFC text editor" .
+
+inst:9932acd8-3664-3267-b1a4-971418d6d29f
+        ifcowl:applicationFullName_IfcApplication  inst:2ad24f97-7fb7-3211-a045-886df8fd2739 .
+
+inst:2408333c-214c-3267-ba69-9097ac301061
+        rdf:type           ifcowl:IfcIdentifier ;
+        express:hasString  "ifcTE" .
+
+inst:9932acd8-3664-3267-b1a4-971418d6d29f
+        ifcowl:applicationIdentifier_IfcApplication  inst:2408333c-214c-3267-ba69-9097ac301061 .
+
+inst:6d8bf77c-79cb-3983-9d92-365bbd88e1da
+        rdf:type              ifcowl:IfcGeometricRepresentationContext ;
+        express:hasExpressID  201 .
+
+inst:c02ccf8f-9e1c-3144-a620-fab8ed6df55e
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "Model" .
+
+inst:6d8bf77c-79cb-3983-9d92-365bbd88e1da
+        ifcowl:contextType_IfcRepresentationContext  inst:c02ccf8f-9e1c-3144-a620-fab8ed6df55e .
+
+inst:53f10745-50ba-36bb-aeec-915f083ac871
+        rdf:type            ifcowl:IfcDimensionCount ;
+        express:hasInteger  3 .
+
+inst:6d8bf77c-79cb-3983-9d92-365bbd88e1da
+        ifcowl:coordinateSpaceDimension_IfcGeometricRepresentationContext  inst:53f10745-50ba-36bb-aeec-915f083ac871 .
+
+inst:97e2a12c-af70-3dfb-bb69-93d8d2aedd1f
+        rdf:type           ifcowl:IfcReal ;
+        express:hasDouble  1.0E-5 .
+
+inst:6d8bf77c-79cb-3983-9d92-365bbd88e1da
+        ifcowl:precision_IfcGeometricRepresentationContext  inst:97e2a12c-af70-3dfb-bb69-93d8d2aedd1f ;
+        ifcowl:worldCoordinateSystem_IfcGeometricRepresentationContext  inst:209a426e-f750-39e5-851f-e3fb5b775a25 .
+
+inst:9aa07ac5-daa8-307c-80f2-56a71c4ab839
+        rdf:type              ifcowl:IfcGeometricRepresentationSubContext ;
+        express:hasExpressID  202 .
+
+inst:2df9142d-6092-3f4f-b8b4-98ffe43f608a
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "Body" .
+
+inst:9aa07ac5-daa8-307c-80f2-56a71c4ab839
+        ifcowl:contextIdentifier_IfcRepresentationContext  inst:2df9142d-6092-3f4f-b8b4-98ffe43f608a .
+
+inst:7bfb4c0d-8138-3a15-85ec-dec207fa4d04
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "Model" .
+
+inst:9aa07ac5-daa8-307c-80f2-56a71c4ab839
+        ifcowl:contextType_IfcRepresentationContext  inst:7bfb4c0d-8138-3a15-85ec-dec207fa4d04 ;
+        ifcowl:parentContext_IfcGeometricRepresentationSubContext  inst:6d8bf77c-79cb-3983-9d92-365bbd88e1da ;
+        ifcowl:targetView_IfcGeometricRepresentationSubContext  ifcowl:MODEL_VIEW .
+
+inst:209a426e-f750-39e5-851f-e3fb5b775a25
+        rdf:type                      ifcowl:IfcAxis2Placement3D ;
+        express:hasExpressID          210 ;
+        ifcowl:location_IfcPlacement  inst:29de3984-3cf0-381e-a247-5a56813bb6a9 .
+
+inst:d534f705-3b1a-3d83-802a-20712d43a3e5
+        rdf:type                        ifcowl:IfcUnitAssignment ;
+        express:hasExpressID            301 ;
+        ifcowl:units_IfcUnitAssignment  inst:baea5a56-4d5c-3068-b6fa-6085bb604209 ;
+        ifcowl:units_IfcUnitAssignment  inst:afa4d3f8-a020-3ac3-9b9e-cc7c0136fbb4 .
+
+inst:baea5a56-4d5c-3068-b6fa-6085bb604209
+        rdf:type                      ifcowl:IfcSIUnit ;
+        express:hasExpressID          311 ;
+        ifcowl:unitType_IfcNamedUnit  ifcowl:LENGTHUNIT ;
+        ifcowl:prefix_IfcSIUnit       ifcowl:MILLI ;
+        ifcowl:name_IfcSIUnit         ifcowl:METRE .
+
+inst:afa4d3f8-a020-3ac3-9b9e-cc7c0136fbb4
+        rdf:type                        ifcowl:IfcConversionBasedUnit ;
+        express:hasExpressID            312 ;
+        ifcowl:dimensions_IfcNamedUnit  inst:7258f31d-d571-370a-8eeb-00a1f3db8925 ;
+        ifcowl:unitType_IfcNamedUnit    ifcowl:PLANEANGLEUNIT .
+
+inst:5f13fece-a0aa-3b89-90e7-1861b865ca71
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "degree" .
+
+inst:afa4d3f8-a020-3ac3-9b9e-cc7c0136fbb4
+        ifcowl:name_IfcConversionBasedUnit  inst:5f13fece-a0aa-3b89-90e7-1861b865ca71 ;
+        ifcowl:conversionFactor_IfcConversionBasedUnit  inst:b0ed4946-d90f-35ce-ad4b-73d20cce0c80 .
+
+inst:7258f31d-d571-370a-8eeb-00a1f3db8925
+        rdf:type              ifcowl:IfcDimensionalExponents ;
+        express:hasExpressID  313 .
+
+inst:d0803f20-f703-311c-8144-841df14edddc
+        rdf:type            express:INTEGER ;
+        express:hasInteger  0 .
+
+inst:7258f31d-d571-370a-8eeb-00a1f3db8925
+        ifcowl:lengthExponent_IfcDimensionalExponents  inst:d0803f20-f703-311c-8144-841df14edddc .
+
+inst:28933ba0-66d4-39b4-90d0-f30cb0edbe83
+        rdf:type            express:INTEGER ;
+        express:hasInteger  0 .
+
+inst:7258f31d-d571-370a-8eeb-00a1f3db8925
+        ifcowl:massExponent_IfcDimensionalExponents  inst:28933ba0-66d4-39b4-90d0-f30cb0edbe83 .
+
+inst:6e8c4358-6948-3527-bc98-de572b351d6b
+        rdf:type            express:INTEGER ;
+        express:hasInteger  0 .
+
+inst:7258f31d-d571-370a-8eeb-00a1f3db8925
+        ifcowl:timeExponent_IfcDimensionalExponents  inst:6e8c4358-6948-3527-bc98-de572b351d6b .
+
+inst:f4d6c16a-89ca-3cdb-b4ba-bfc6704231cd
+        rdf:type            express:INTEGER ;
+        express:hasInteger  0 .
+
+inst:7258f31d-d571-370a-8eeb-00a1f3db8925
+        ifcowl:electricCurrentExponent_IfcDimensionalExponents  inst:f4d6c16a-89ca-3cdb-b4ba-bfc6704231cd .
+
+inst:14d31aa0-657f-344c-89f8-2a46f7b3665a
+        rdf:type            express:INTEGER ;
+        express:hasInteger  0 .
+
+inst:7258f31d-d571-370a-8eeb-00a1f3db8925
+        ifcowl:thermodynamicTemperatureExponent_IfcDimensionalExponents  inst:14d31aa0-657f-344c-89f8-2a46f7b3665a .
+
+inst:4b413f25-cbaa-3329-96a7-0b44734edbc5
+        rdf:type            express:INTEGER ;
+        express:hasInteger  0 .
+
+inst:7258f31d-d571-370a-8eeb-00a1f3db8925
+        ifcowl:amountOfSubstanceExponent_IfcDimensionalExponents  inst:4b413f25-cbaa-3329-96a7-0b44734edbc5 .
+
+inst:339ec3e1-9974-3896-a387-ec3f6a2109fb
+        rdf:type            express:INTEGER ;
+        express:hasInteger  0 .
+
+inst:7258f31d-d571-370a-8eeb-00a1f3db8925
+        ifcowl:luminousIntensityExponent_IfcDimensionalExponents  inst:339ec3e1-9974-3896-a387-ec3f6a2109fb .
+
+inst:b0ed4946-d90f-35ce-ad4b-73d20cce0c80
+        rdf:type              ifcowl:IfcMeasureWithUnit ;
+        express:hasExpressID  314 .
+
+inst:9146bdad-aa73-3abb-a3b5-e7f5756df51f
+        rdf:type           ifcowl:IfcPlaneAngleMeasure ;
+        express:hasDouble  "0.017453293"^^xsd:double .
+
+inst:b0ed4946-d90f-35ce-ad4b-73d20cce0c80
+        ifcowl:valueComponent_IfcMeasureWithUnit  inst:9146bdad-aa73-3abb-a3b5-e7f5756df51f ;
+        ifcowl:unitComponent_IfcMeasureWithUnit  inst:0badd396-5fdb-3d20-a030-44f06e2d9750 .
+
+inst:0badd396-5fdb-3d20-a030-44f06e2d9750
+        rdf:type                      ifcowl:IfcSIUnit ;
+        express:hasExpressID          315 ;
+        ifcowl:unitType_IfcNamedUnit  ifcowl:PLANEANGLEUNIT ;
+        ifcowl:name_IfcSIUnit         ifcowl:RADIAN .
+
+inst:5b8201df-0150-3561-af54-dd99445430f9
+        rdf:type              ifcowl:IfcBuilding ;
+        express:hasExpressID  500 .
+
+inst:fbf9293d-d90d-31ae-bc3e-9dd5c3859b98
+        rdf:type           ifcowl:IfcGloballyUniqueId ;
+        express:hasString  "2FCZDorxHDT8NI01kdXi8P" .
+
+inst:5b8201df-0150-3561-af54-dd99445430f9
+        ifcowl:globalId_IfcRoot  inst:fbf9293d-d90d-31ae-bc3e-9dd5c3859b98 .
+
+inst:b059c23c-7a65-3c1b-a9cc-546d80cde72f
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "Test Building" .
+
+inst:5b8201df-0150-3561-af54-dd99445430f9
+        ifcowl:name_IfcRoot  inst:b059c23c-7a65-3c1b-a9cc-546d80cde72f ;
+        ifcowl:objectPlacement_IfcProduct  inst:b45d6a41-900c-3d07-afd5-405015173793 ;
+        ifcowl:compositionType_IfcSpatialStructureElement  ifcowl:ELEMENT .
+
+inst:b45d6a41-900c-3d07-afd5-405015173793
+        rdf:type              ifcowl:IfcLocalPlacement ;
+        express:hasExpressID  511 ;
+        ifcowl:relativePlacement_IfcLocalPlacement  inst:e9052b3b-0c39-3b02-8b04-f807162738c1 .
+
+inst:e9052b3b-0c39-3b02-8b04-f807162738c1
+        rdf:type                      ifcowl:IfcAxis2Placement3D ;
+        express:hasExpressID          512 ;
+        ifcowl:location_IfcPlacement  inst:29de3984-3cf0-381e-a247-5a56813bb6a9 .
+
+inst:40d67dec-62a4-30c7-89f7-dc5099d9a469
+        rdf:type              ifcowl:IfcRelAggregates ;
+        express:hasExpressID  519 .
+
+inst:24f4ed30-4fe1-34e9-bb53-bca87c5f9b2d
+        rdf:type           ifcowl:IfcGloballyUniqueId ;
+        express:hasString  "2YBqaV_8L15eWJ9DA1sGmT" .
+
+inst:40d67dec-62a4-30c7-89f7-dc5099d9a469
+        ifcowl:globalId_IfcRoot  inst:24f4ed30-4fe1-34e9-bb53-bca87c5f9b2d ;
+        ifcowl:relatingObject_IfcRelAggregates  inst:7cd8331c-0064-3a40-8fae-32c044e1b0e1 ;
+        ifcowl:relatedObjects_IfcRelAggregates  inst:5b8201df-0150-3561-af54-dd99445430f9 .
+
+inst:29de3984-3cf0-381e-a247-5a56813bb6a9
+        rdf:type              ifcowl:IfcCartesianPoint ;
+        express:hasExpressID  901 .
+
+inst:a8e3a57e-2c33-3775-8fc6-4b47063c41d8
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:29de3984-3cf0-381e-a247-5a56813bb6a9
+        ifcowl:coordinates_IfcCartesianPoint  inst:a8e3a57e-2c33-3775-8fc6-4b47063c41d8 .
+
+inst:854174d4-80b1-3b8a-a91f-7289fbba77cd
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:a8916190-eecd-39f5-a068-30b835444b3d
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:1ff59b47-01d5-330f-a362-5cef6cf05fd9
+        rdf:type           ifcowl:IfcLengthMeasure ;
+        express:hasDouble  "0."^^xsd:double .
+
+inst:a8e3a57e-2c33-3775-8fc6-4b47063c41d8
+        list:hasContents  inst:1ff59b47-01d5-330f-a362-5cef6cf05fd9 ;
+        list:hasNext      inst:854174d4-80b1-3b8a-a91f-7289fbba77cd .
+
+inst:854174d4-80b1-3b8a-a91f-7289fbba77cd
+        list:hasContents  inst:1ff59b47-01d5-330f-a362-5cef6cf05fd9 ;
+        list:hasNext      inst:a8916190-eecd-39f5-a068-30b835444b3d .
+
+inst:a8916190-eecd-39f5-a068-30b835444b3d
+        list:hasContents  inst:1ff59b47-01d5-330f-a362-5cef6cf05fd9 .
+
+inst:a7e952d7-5c01-383d-9aeb-93372c6bd6c7
+        rdf:type              ifcowl:IfcDirection ;
+        express:hasExpressID  902 .
+
+inst:98ded382-ac3a-33b5-90de-d3fc555f5b18
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:a7e952d7-5c01-383d-9aeb-93372c6bd6c7
+        ifcowl:directionRatios_IfcDirection  inst:98ded382-ac3a-33b5-90de-d3fc555f5b18 .
+
+inst:ed65f47f-3328-36cc-95ad-d2c892f07216
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:4b007756-70a3-3fb5-8c3f-e9939b05730c
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:cb3e4332-64dc-3003-b850-81c6de7af952
+        rdf:type           ifcowl:IfcReal ;
+        express:hasDouble  "1."^^xsd:double .
+
+inst:98ded382-ac3a-33b5-90de-d3fc555f5b18
+        list:hasContents  inst:cb3e4332-64dc-3003-b850-81c6de7af952 ;
+        list:hasNext      inst:ed65f47f-3328-36cc-95ad-d2c892f07216 .
+
+inst:ed65f47f-3328-36cc-95ad-d2c892f07216
+        list:hasContents  inst:1ff59b47-01d5-330f-a362-5cef6cf05fd9 ;
+        list:hasNext      inst:4b007756-70a3-3fb5-8c3f-e9939b05730c .
+
+inst:4b007756-70a3-3fb5-8c3f-e9939b05730c
+        list:hasContents  inst:1ff59b47-01d5-330f-a362-5cef6cf05fd9 .
+
+inst:27a99140-b084-36af-8f9e-e069eeebf13e
+        rdf:type              ifcowl:IfcDirection ;
+        express:hasExpressID  903 .
+
+inst:d1830b0a-b74c-396e-8d37-833f0f9bd7f0
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:27a99140-b084-36af-8f9e-e069eeebf13e
+        ifcowl:directionRatios_IfcDirection  inst:d1830b0a-b74c-396e-8d37-833f0f9bd7f0 .
+
+inst:1284a8e4-9f6c-306b-aeda-416dfd40d0c6
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:c04ccc60-5dc2-328e-9ff5-c3acffb8c61b
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:d1830b0a-b74c-396e-8d37-833f0f9bd7f0
+        list:hasContents  inst:1ff59b47-01d5-330f-a362-5cef6cf05fd9 ;
+        list:hasNext      inst:1284a8e4-9f6c-306b-aeda-416dfd40d0c6 .
+
+inst:1284a8e4-9f6c-306b-aeda-416dfd40d0c6
+        list:hasContents  inst:cb3e4332-64dc-3003-b850-81c6de7af952 ;
+        list:hasNext      inst:c04ccc60-5dc2-328e-9ff5-c3acffb8c61b .
+
+inst:c04ccc60-5dc2-328e-9ff5-c3acffb8c61b
+        list:hasContents  inst:1ff59b47-01d5-330f-a362-5cef6cf05fd9 .
+
+inst:c1f5fbf0-158b-3351-b055-111459098995
+        rdf:type              ifcowl:IfcDirection ;
+        express:hasExpressID  904 .
+
+inst:aaf64843-78f4-3c69-b205-891262a3c76e
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:c1f5fbf0-158b-3351-b055-111459098995
+        ifcowl:directionRatios_IfcDirection  inst:aaf64843-78f4-3c69-b205-891262a3c76e .
+
+inst:542bc530-ae28-3b33-a9b8-25b0fcc817e4
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:cf153a2f-230e-381b-9efc-6dd409d0e061
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:aaf64843-78f4-3c69-b205-891262a3c76e
+        list:hasContents  inst:1ff59b47-01d5-330f-a362-5cef6cf05fd9 ;
+        list:hasNext      inst:542bc530-ae28-3b33-a9b8-25b0fcc817e4 .
+
+inst:542bc530-ae28-3b33-a9b8-25b0fcc817e4
+        list:hasContents  inst:1ff59b47-01d5-330f-a362-5cef6cf05fd9 ;
+        list:hasNext      inst:cf153a2f-230e-381b-9efc-6dd409d0e061 .
+
+inst:cf153a2f-230e-381b-9efc-6dd409d0e061
+        list:hasContents  inst:cb3e4332-64dc-3003-b850-81c6de7af952 .
+
+inst:b24fa43e-9a40-38a4-9921-6273fe6df626
+        rdf:type              ifcowl:IfcDirection ;
+        express:hasExpressID  905 .
+
+inst:233da530-d411-3c54-b082-6a033e03a56e
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:b24fa43e-9a40-38a4-9921-6273fe6df626
+        ifcowl:directionRatios_IfcDirection  inst:233da530-d411-3c54-b082-6a033e03a56e .
+
+inst:5872a6a8-6fd4-3812-8db9-8f043652b84e
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:451c913a-0042-3682-bd5c-d862935a14df
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:2ce5efb1-3004-370a-92e8-9f9074a972ed
+        rdf:type           ifcowl:IfcReal ;
+        express:hasDouble  "-1."^^xsd:double .
+
+inst:233da530-d411-3c54-b082-6a033e03a56e
+        list:hasContents  inst:2ce5efb1-3004-370a-92e8-9f9074a972ed ;
+        list:hasNext      inst:5872a6a8-6fd4-3812-8db9-8f043652b84e .
+
+inst:5872a6a8-6fd4-3812-8db9-8f043652b84e
+        list:hasContents  inst:1ff59b47-01d5-330f-a362-5cef6cf05fd9 ;
+        list:hasNext      inst:451c913a-0042-3682-bd5c-d862935a14df .
+
+inst:451c913a-0042-3682-bd5c-d862935a14df
+        list:hasContents  inst:1ff59b47-01d5-330f-a362-5cef6cf05fd9 .
+
+inst:af3d02df-e0e3-3cdb-8127-20fd815e3ba1
+        rdf:type              ifcowl:IfcDirection ;
+        express:hasExpressID  906 .
+
+inst:059a3fa0-7cd9-3ca6-bfaf-d1ca69fddc65
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:af3d02df-e0e3-3cdb-8127-20fd815e3ba1
+        ifcowl:directionRatios_IfcDirection  inst:059a3fa0-7cd9-3ca6-bfaf-d1ca69fddc65 .
+
+inst:83d83513-2b6c-3698-a8af-d1b38d46b3cb
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:5d27ec96-4a5f-3465-be06-22b1fb730126
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:059a3fa0-7cd9-3ca6-bfaf-d1ca69fddc65
+        list:hasContents  inst:1ff59b47-01d5-330f-a362-5cef6cf05fd9 ;
+        list:hasNext      inst:83d83513-2b6c-3698-a8af-d1b38d46b3cb .
+
+inst:83d83513-2b6c-3698-a8af-d1b38d46b3cb
+        list:hasContents  inst:2ce5efb1-3004-370a-92e8-9f9074a972ed ;
+        list:hasNext      inst:5d27ec96-4a5f-3465-be06-22b1fb730126 .
+
+inst:5d27ec96-4a5f-3465-be06-22b1fb730126
+        list:hasContents  inst:1ff59b47-01d5-330f-a362-5cef6cf05fd9 .
+
+inst:84a0a218-7680-32d3-b863-b1fc7913e516
+        rdf:type              ifcowl:IfcDirection ;
+        express:hasExpressID  907 .
+
+inst:222845a0-059f-362d-bcf7-3245acc5b83d
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:84a0a218-7680-32d3-b863-b1fc7913e516
+        ifcowl:directionRatios_IfcDirection  inst:222845a0-059f-362d-bcf7-3245acc5b83d .
+
+inst:fb63d6b2-5541-398e-8250-aa3f59fd2e85
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:32c9a828-03e1-35d7-9a6f-ca0835c7f052
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:222845a0-059f-362d-bcf7-3245acc5b83d
+        list:hasContents  inst:1ff59b47-01d5-330f-a362-5cef6cf05fd9 ;
+        list:hasNext      inst:fb63d6b2-5541-398e-8250-aa3f59fd2e85 .
+
+inst:fb63d6b2-5541-398e-8250-aa3f59fd2e85
+        list:hasContents  inst:1ff59b47-01d5-330f-a362-5cef6cf05fd9 ;
+        list:hasNext      inst:32c9a828-03e1-35d7-9a6f-ca0835c7f052 .
+
+inst:32c9a828-03e1-35d7-9a6f-ca0835c7f052
+        list:hasContents  inst:2ce5efb1-3004-370a-92e8-9f9074a972ed .
+
+inst:8ee1982e-8090-35fb-9b11-784e5274e1c4
+        rdf:type              ifcowl:IfcBuildingElementProxy ;
+        express:hasExpressID  1000 .
+
+inst:f46dff3e-820e-3210-bcef-eab3d52e615d
+        rdf:type           ifcowl:IfcGloballyUniqueId ;
+        express:hasString  "1kTvXnbbzCWw8lcMd1dR4o" .
+
+inst:8ee1982e-8090-35fb-9b11-784e5274e1c4
+        ifcowl:globalId_IfcRoot  inst:f46dff3e-820e-3210-bcef-eab3d52e615d .
+
+inst:645cd8cd-ffc0-3a68-b729-bd6d03917ef8
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "P-1" .
+
+inst:8ee1982e-8090-35fb-9b11-784e5274e1c4
+        ifcowl:name_IfcRoot  inst:645cd8cd-ffc0-3a68-b729-bd6d03917ef8 .
+
+inst:5b06c5c4-39f3-3dd0-8f84-fa67733d1c1b
+        rdf:type           ifcowl:IfcText ;
+        express:hasString  "sample proxy" .
+
+inst:8ee1982e-8090-35fb-9b11-784e5274e1c4
+        ifcowl:description_IfcRoot  inst:5b06c5c4-39f3-3dd0-8f84-fa67733d1c1b ;
+        ifcowl:objectPlacement_IfcProduct  inst:eaa3430e-8f6b-3fda-ab85-dbcf164599c8 ;
+        ifcowl:representation_IfcProduct  inst:11675c33-a361-3afe-be4d-be1dcccc0fc1 .
+
+inst:eaa3430e-8f6b-3fda-ab85-dbcf164599c8
+        rdf:type              ifcowl:IfcLocalPlacement ;
+        express:hasExpressID  1001 ;
+        ifcowl:placementRelTo_IfcLocalPlacement  inst:b45d6a41-900c-3d07-afd5-405015173793 ;
+        ifcowl:relativePlacement_IfcLocalPlacement  inst:1566a44f-b2ca-3257-81cb-34d2f78fc74f .
+
+inst:1566a44f-b2ca-3257-81cb-34d2f78fc74f
+        rdf:type                      ifcowl:IfcAxis2Placement3D ;
+        express:hasExpressID          1002 ;
+        ifcowl:location_IfcPlacement  inst:2c136306-aad1-3598-9f1c-b6e1d0ea653c .
+
+inst:2c136306-aad1-3598-9f1c-b6e1d0ea653c
+        rdf:type              ifcowl:IfcCartesianPoint ;
+        express:hasExpressID  1003 .
+
+inst:8f095d72-3b4f-3115-b5d6-e0f360013fa1
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:2c136306-aad1-3598-9f1c-b6e1d0ea653c
+        ifcowl:coordinates_IfcCartesianPoint  inst:8f095d72-3b4f-3115-b5d6-e0f360013fa1 .
+
+inst:3e4c17a5-6e7f-3963-b6f9-735400d71520
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:75b616e9-d8ed-337c-974c-cbdcf8dd7e60
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:43079115-717e-3d00-9728-9fe2c02264cc
+        rdf:type           ifcowl:IfcLengthMeasure ;
+        express:hasDouble  "1000."^^xsd:double .
+
+inst:8f095d72-3b4f-3115-b5d6-e0f360013fa1
+        list:hasContents  inst:43079115-717e-3d00-9728-9fe2c02264cc ;
+        list:hasNext      inst:3e4c17a5-6e7f-3963-b6f9-735400d71520 .
+
+inst:3e4c17a5-6e7f-3963-b6f9-735400d71520
+        list:hasContents  inst:1ff59b47-01d5-330f-a362-5cef6cf05fd9 ;
+        list:hasNext      inst:75b616e9-d8ed-337c-974c-cbdcf8dd7e60 .
+
+inst:75b616e9-d8ed-337c-974c-cbdcf8dd7e60
+        list:hasContents  inst:1ff59b47-01d5-330f-a362-5cef6cf05fd9 .
+
+inst:11675c33-a361-3afe-be4d-be1dcccc0fc1
+        rdf:type              ifcowl:IfcProductDefinitionShape ;
+        express:hasExpressID  1010 .
+
+inst:f4f15306-aa6a-3dac-9a70-9231674acf38
+        rdf:type  ifcowl:IfcRepresentation_List .
+
+inst:11675c33-a361-3afe-be4d-be1dcccc0fc1
+        ifcowl:representations_IfcProductRepresentation  inst:f4f15306-aa6a-3dac-9a70-9231674acf38 .
+
+inst:f4f15306-aa6a-3dac-9a70-9231674acf38
+        list:hasContents  inst:9ecb8d4d-c5be-377c-afd8-b96dbb98ce90 .
+
+inst:9ecb8d4d-c5be-377c-afd8-b96dbb98ce90
+        rdf:type              ifcowl:IfcShapeRepresentation ;
+        express:hasExpressID  1020 ;
+        ifcowl:contextOfItems_IfcRepresentation  inst:9aa07ac5-daa8-307c-80f2-56a71c4ab839 .
+
+inst:00aff980-4ab8-34bc-9270-9ec179169b71
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "Body" .
+
+inst:9ecb8d4d-c5be-377c-afd8-b96dbb98ce90
+        ifcowl:representationIdentifier_IfcRepresentation  inst:00aff980-4ab8-34bc-9270-9ec179169b71 .
+
+inst:9664fdcb-0d02-316f-ae45-22736ef939f2
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "Tessellation" .
+
+inst:9ecb8d4d-c5be-377c-afd8-b96dbb98ce90
+        ifcowl:representationType_IfcRepresentation  inst:9664fdcb-0d02-316f-ae45-22736ef939f2 ;
+        ifcowl:items_IfcRepresentation  inst:196f5510-f152-3319-8f79-a96daaff5b63 .
+
+inst:196f5510-f152-3319-8f79-a96daaff5b63
+        rdf:type              ifcowl:IfcTriangulatedFaceSet ;
+        express:hasExpressID  1021 ;
+        ifcowl:coordinates_IfcTessellatedFaceSet  inst:6b7c143d-eec3-3aad-abd5-d5551640b72a .
+
+inst:e77a542c-cd5b-340a-910a-ed4e35a52a87
+        rdf:type            ifcowl:IfcBoolean ;
+        express:hasBoolean  true .
+
+inst:196f5510-f152-3319-8f79-a96daaff5b63
+        ifcowl:closed_IfcTessellatedFaceSet  inst:e77a542c-cd5b-340a-910a-ed4e35a52a87 .
+
+inst:235d03f7-432d-353a-bf36-6ff3a7b186f8
+        rdf:type  ifcowl:IfcPositiveInteger_List .
+
+inst:29c3337d-54db-329c-88f3-07510195b889
+        rdf:type  ifcowl:IfcPositiveInteger_List .
+
+inst:af1d4182-a7bb-3bbc-850b-4f4d2cb7e152
+        rdf:type  ifcowl:IfcPositiveInteger_List .
+
+inst:29d26d8f-8dc5-320d-a3c9-a0ea27a960eb
+        rdf:type            ifcowl:IfcPositiveInteger ;
+        express:hasInteger  1 .
+
+inst:235d03f7-432d-353a-bf36-6ff3a7b186f8
+        list:hasContents  inst:29d26d8f-8dc5-320d-a3c9-a0ea27a960eb ;
+        list:hasNext      inst:29c3337d-54db-329c-88f3-07510195b889 .
+
+inst:eb493fdc-ac17-3ea5-bfb4-1e7df670a7f4
+        rdf:type            ifcowl:IfcPositiveInteger ;
+        express:hasInteger  6 .
+
+inst:29c3337d-54db-329c-88f3-07510195b889
+        list:hasContents  inst:eb493fdc-ac17-3ea5-bfb4-1e7df670a7f4 ;
+        list:hasNext      inst:af1d4182-a7bb-3bbc-850b-4f4d2cb7e152 .
+
+inst:3843d739-39a8-34f4-b79c-2d581bcb59e5
+        rdf:type            ifcowl:IfcPositiveInteger ;
+        express:hasInteger  5 .
+
+inst:af1d4182-a7bb-3bbc-850b-4f4d2cb7e152
+        list:hasContents  inst:3843d739-39a8-34f4-b79c-2d581bcb59e5 .
+
+inst:386c094d-6f7e-32ce-aad4-b966b7cb475c
+        rdf:type  ifcowl:IfcPositiveInteger_List .
+
+inst:fdff5acc-69eb-3ca6-a42a-aa29cea50342
+        rdf:type  ifcowl:IfcPositiveInteger_List .
+
+inst:3ad2a05b-6626-3152-ace5-b924a576c71a
+        rdf:type  ifcowl:IfcPositiveInteger_List .
+
+inst:386c094d-6f7e-32ce-aad4-b966b7cb475c
+        list:hasContents  inst:29d26d8f-8dc5-320d-a3c9-a0ea27a960eb ;
+        list:hasNext      inst:fdff5acc-69eb-3ca6-a42a-aa29cea50342 .
+
+inst:f07639fb-39e5-3e21-b4c9-a9c7276ae9d7
+        rdf:type            ifcowl:IfcPositiveInteger ;
+        express:hasInteger  2 .
+
+inst:fdff5acc-69eb-3ca6-a42a-aa29cea50342
+        list:hasContents  inst:f07639fb-39e5-3e21-b4c9-a9c7276ae9d7 ;
+        list:hasNext      inst:3ad2a05b-6626-3152-ace5-b924a576c71a .
+
+inst:3ad2a05b-6626-3152-ace5-b924a576c71a
+        list:hasContents  inst:eb493fdc-ac17-3ea5-bfb4-1e7df670a7f4 .
+
+inst:b435076f-0e09-3bdd-9ea4-1373bfa0fede
+        rdf:type  ifcowl:IfcPositiveInteger_List .
+
+inst:c435f940-ed45-3c64-8514-85c619d03732
+        rdf:type  ifcowl:IfcPositiveInteger_List .
+
+inst:4e31da0d-b733-34f4-b0bf-0fcf6ea158e1
+        rdf:type  ifcowl:IfcPositiveInteger_List .
+
+inst:b435076f-0e09-3bdd-9ea4-1373bfa0fede
+        list:hasContents  inst:eb493fdc-ac17-3ea5-bfb4-1e7df670a7f4 ;
+        list:hasNext      inst:c435f940-ed45-3c64-8514-85c619d03732 .
+
+inst:c435f940-ed45-3c64-8514-85c619d03732
+        list:hasContents  inst:f07639fb-39e5-3e21-b4c9-a9c7276ae9d7 ;
+        list:hasNext      inst:4e31da0d-b733-34f4-b0bf-0fcf6ea158e1 .
+
+inst:453e5ca4-3eee-3623-bd38-751bdc620b11
+        rdf:type            ifcowl:IfcPositiveInteger ;
+        express:hasInteger  7 .
+
+inst:4e31da0d-b733-34f4-b0bf-0fcf6ea158e1
+        list:hasContents  inst:453e5ca4-3eee-3623-bd38-751bdc620b11 .
+
+inst:bd757b71-efb9-3caf-8909-abd67584e37f
+        rdf:type  ifcowl:IfcPositiveInteger_List .
+
+inst:a86823ff-8cad-34f7-941f-ad8df2f7f629
+        rdf:type  ifcowl:IfcPositiveInteger_List .
+
+inst:72d68074-fb92-323d-b67b-511b74993866
+        rdf:type  ifcowl:IfcPositiveInteger_List .
+
+inst:bd757b71-efb9-3caf-8909-abd67584e37f
+        list:hasContents  inst:453e5ca4-3eee-3623-bd38-751bdc620b11 ;
+        list:hasNext      inst:a86823ff-8cad-34f7-941f-ad8df2f7f629 .
+
+inst:a86823ff-8cad-34f7-941f-ad8df2f7f629
+        list:hasContents  inst:f07639fb-39e5-3e21-b4c9-a9c7276ae9d7 ;
+        list:hasNext      inst:72d68074-fb92-323d-b67b-511b74993866 .
+
+inst:72d68074-fb92-323d-b67b-511b74993866
+        list:hasContents  inst:53f10745-50ba-36bb-aeec-915f083ac871 .
+
+inst:bf1342dd-36b4-3385-856b-f6dd44158370
+        rdf:type  ifcowl:IfcPositiveInteger_List .
+
+inst:3b1d9dca-43eb-3634-9542-d1e506c8878d
+        rdf:type  ifcowl:IfcPositiveInteger_List .
+
+inst:93846d66-356a-383a-a69e-bc5388ba4c1d
+        rdf:type  ifcowl:IfcPositiveInteger_List .
+
+inst:bf1342dd-36b4-3385-856b-f6dd44158370
+        list:hasContents  inst:453e5ca4-3eee-3623-bd38-751bdc620b11 ;
+        list:hasNext      inst:3b1d9dca-43eb-3634-9542-d1e506c8878d .
+
+inst:a362d49c-a662-309d-9821-c0d34df2f739
+        rdf:type            ifcowl:IfcPositiveInteger ;
+        express:hasInteger  8 .
+
+inst:3b1d9dca-43eb-3634-9542-d1e506c8878d
+        list:hasContents  inst:a362d49c-a662-309d-9821-c0d34df2f739 ;
+        list:hasNext      inst:93846d66-356a-383a-a69e-bc5388ba4c1d .
+
+inst:93846d66-356a-383a-a69e-bc5388ba4c1d
+        list:hasContents  inst:eb493fdc-ac17-3ea5-bfb4-1e7df670a7f4 .
+
+inst:9fab37cc-b090-3f94-8c36-446f386f3750
+        rdf:type  ifcowl:IfcPositiveInteger_List .
+
+inst:e7551e2d-2d10-335d-99a0-2f6d27d1b79c
+        rdf:type  ifcowl:IfcPositiveInteger_List .
+
+inst:4bdce174-54aa-359b-a7ef-3e0496aa65e0
+        rdf:type  ifcowl:IfcPositiveInteger_List .
+
+inst:9fab37cc-b090-3f94-8c36-446f386f3750
+        list:hasContents  inst:eb493fdc-ac17-3ea5-bfb4-1e7df670a7f4 ;
+        list:hasNext      inst:e7551e2d-2d10-335d-99a0-2f6d27d1b79c .
+
+inst:e7551e2d-2d10-335d-99a0-2f6d27d1b79c
+        list:hasContents  inst:a362d49c-a662-309d-9821-c0d34df2f739 ;
+        list:hasNext      inst:4bdce174-54aa-359b-a7ef-3e0496aa65e0 .
+
+inst:4bdce174-54aa-359b-a7ef-3e0496aa65e0
+        list:hasContents  inst:3843d739-39a8-34f4-b79c-2d581bcb59e5 .
+
+inst:0e48729a-1562-3fa8-aec0-3364825e1035
+        rdf:type  ifcowl:IfcPositiveInteger_List .
+
+inst:2cd4629b-1ba0-393a-ba00-97035b0f3732
+        rdf:type  ifcowl:IfcPositiveInteger_List .
+
+inst:0b283d13-f2cc-3847-b77e-873afd3616cb
+        rdf:type  ifcowl:IfcPositiveInteger_List .
+
+inst:0e48729a-1562-3fa8-aec0-3364825e1035
+        list:hasContents  inst:3843d739-39a8-34f4-b79c-2d581bcb59e5 ;
+        list:hasNext      inst:2cd4629b-1ba0-393a-ba00-97035b0f3732 .
+
+inst:2cd4629b-1ba0-393a-ba00-97035b0f3732
+        list:hasContents  inst:a362d49c-a662-309d-9821-c0d34df2f739 ;
+        list:hasNext      inst:0b283d13-f2cc-3847-b77e-873afd3616cb .
+
+inst:0b283d13-f2cc-3847-b77e-873afd3616cb
+        list:hasContents  inst:29d26d8f-8dc5-320d-a3c9-a0ea27a960eb .
+
+inst:f866d4bf-15b2-39c7-9843-ecf2cc433c27
+        rdf:type  ifcowl:IfcPositiveInteger_List .
+
+inst:893c84a2-d1b4-3e45-9404-f0669a3a49cb
+        rdf:type  ifcowl:IfcPositiveInteger_List .
+
+inst:8424b89c-75a2-3e50-9a75-121bd266a896
+        rdf:type  ifcowl:IfcPositiveInteger_List .
+
+inst:f866d4bf-15b2-39c7-9843-ecf2cc433c27
+        list:hasContents  inst:29d26d8f-8dc5-320d-a3c9-a0ea27a960eb ;
+        list:hasNext      inst:893c84a2-d1b4-3e45-9404-f0669a3a49cb .
+
+inst:893c84a2-d1b4-3e45-9404-f0669a3a49cb
+        list:hasContents  inst:a362d49c-a662-309d-9821-c0d34df2f739 ;
+        list:hasNext      inst:8424b89c-75a2-3e50-9a75-121bd266a896 .
+
+inst:a1f67e51-34a0-3585-9067-e693c8ac75cd
+        rdf:type            ifcowl:IfcPositiveInteger ;
+        express:hasInteger  4 .
+
+inst:8424b89c-75a2-3e50-9a75-121bd266a896
+        list:hasContents  inst:a1f67e51-34a0-3585-9067-e693c8ac75cd .
+
+inst:231483ae-eb30-3ecf-9421-f12958c2ffc5
+        rdf:type  ifcowl:IfcPositiveInteger_List .
+
+inst:2c8b5f2e-f1e0-3543-b216-d5a489345d91
+        rdf:type  ifcowl:IfcPositiveInteger_List .
+
+inst:181a26d3-696c-3394-b4cd-68e8a715f84d
+        rdf:type  ifcowl:IfcPositiveInteger_List .
+
+inst:231483ae-eb30-3ecf-9421-f12958c2ffc5
+        list:hasContents  inst:a1f67e51-34a0-3585-9067-e693c8ac75cd ;
+        list:hasNext      inst:2c8b5f2e-f1e0-3543-b216-d5a489345d91 .
+
+inst:2c8b5f2e-f1e0-3543-b216-d5a489345d91
+        list:hasContents  inst:f07639fb-39e5-3e21-b4c9-a9c7276ae9d7 ;
+        list:hasNext      inst:181a26d3-696c-3394-b4cd-68e8a715f84d .
+
+inst:181a26d3-696c-3394-b4cd-68e8a715f84d
+        list:hasContents  inst:29d26d8f-8dc5-320d-a3c9-a0ea27a960eb .
+
+inst:b1965199-3f4b-30ea-881d-0c8520d832ac
+        rdf:type  ifcowl:IfcPositiveInteger_List .
+
+inst:82504e3c-1d9d-375e-b56f-a4d028b0f5f6
+        rdf:type  ifcowl:IfcPositiveInteger_List .
+
+inst:a78f813a-0e34-3655-b2ec-587dabd56a4f
+        rdf:type  ifcowl:IfcPositiveInteger_List .
+
+inst:b1965199-3f4b-30ea-881d-0c8520d832ac
+        list:hasContents  inst:f07639fb-39e5-3e21-b4c9-a9c7276ae9d7 ;
+        list:hasNext      inst:82504e3c-1d9d-375e-b56f-a4d028b0f5f6 .
+
+inst:82504e3c-1d9d-375e-b56f-a4d028b0f5f6
+        list:hasContents  inst:a1f67e51-34a0-3585-9067-e693c8ac75cd ;
+        list:hasNext      inst:a78f813a-0e34-3655-b2ec-587dabd56a4f .
+
+inst:a78f813a-0e34-3655-b2ec-587dabd56a4f
+        list:hasContents  inst:53f10745-50ba-36bb-aeec-915f083ac871 .
+
+inst:f7eb6e7e-76e4-3e10-84e2-e8a8e0a17224
+        rdf:type  ifcowl:IfcPositiveInteger_List .
+
+inst:aae0a695-b1c4-3c82-8ad0-67b201850805
+        rdf:type  ifcowl:IfcPositiveInteger_List .
+
+inst:43f6d2b7-a8b2-3f1f-bcbe-39a620ad5754
+        rdf:type  ifcowl:IfcPositiveInteger_List .
+
+inst:f7eb6e7e-76e4-3e10-84e2-e8a8e0a17224
+        list:hasContents  inst:a1f67e51-34a0-3585-9067-e693c8ac75cd ;
+        list:hasNext      inst:aae0a695-b1c4-3c82-8ad0-67b201850805 .
+
+inst:aae0a695-b1c4-3c82-8ad0-67b201850805
+        list:hasContents  inst:a362d49c-a662-309d-9821-c0d34df2f739 ;
+        list:hasNext      inst:43f6d2b7-a8b2-3f1f-bcbe-39a620ad5754 .
+
+inst:43f6d2b7-a8b2-3f1f-bcbe-39a620ad5754
+        list:hasContents  inst:453e5ca4-3eee-3623-bd38-751bdc620b11 .
+
+inst:3006b780-857f-37fc-8b50-763f70258e68
+        rdf:type  ifcowl:IfcPositiveInteger_List .
+
+inst:da8df1d8-ccc3-375c-916e-d24339508f81
+        rdf:type  ifcowl:IfcPositiveInteger_List .
+
+inst:4c244caa-4ac5-32dd-98f4-a4feeceadc64
+        rdf:type  ifcowl:IfcPositiveInteger_List .
+
+inst:3006b780-857f-37fc-8b50-763f70258e68
+        list:hasContents  inst:453e5ca4-3eee-3623-bd38-751bdc620b11 ;
+        list:hasNext      inst:da8df1d8-ccc3-375c-916e-d24339508f81 .
+
+inst:da8df1d8-ccc3-375c-916e-d24339508f81
+        list:hasContents  inst:53f10745-50ba-36bb-aeec-915f083ac871 ;
+        list:hasNext      inst:4c244caa-4ac5-32dd-98f4-a4feeceadc64 .
+
+inst:4c244caa-4ac5-32dd-98f4-a4feeceadc64
+        list:hasContents  inst:a1f67e51-34a0-3585-9067-e693c8ac75cd .
+
+inst:1d6d809b-19a8-38e4-8795-89eca486f4cc
+        rdf:type  ifcowl:IfcPositiveInteger_List_List .
+
+inst:196f5510-f152-3319-8f79-a96daaff5b63
+        ifcowl:coordIndex_IfcTriangulatedFaceSet  inst:1d6d809b-19a8-38e4-8795-89eca486f4cc .
+
+inst:1d6d809b-19a8-38e4-8795-89eca486f4cc
+        list:hasContents  inst:235d03f7-432d-353a-bf36-6ff3a7b186f8 ;
+        list:hasNext      inst:bda9b15e-1118-353a-bc80-6e3dd62336c8 .
+
+inst:bda9b15e-1118-353a-bc80-6e3dd62336c8
+        rdf:type          ifcowl:IfcPositiveInteger_List_List ;
+        list:hasContents  inst:386c094d-6f7e-32ce-aad4-b966b7cb475c ;
+        list:hasNext      inst:e9f1128e-4b13-34db-b909-819b2ba4e11c .
+
+inst:e9f1128e-4b13-34db-b909-819b2ba4e11c
+        rdf:type          ifcowl:IfcPositiveInteger_List_List ;
+        list:hasContents  inst:b435076f-0e09-3bdd-9ea4-1373bfa0fede ;
+        list:hasNext      inst:3df3a220-dde3-3edf-b3df-1ac597efd315 .
+
+inst:3df3a220-dde3-3edf-b3df-1ac597efd315
+        rdf:type          ifcowl:IfcPositiveInteger_List_List ;
+        list:hasContents  inst:bd757b71-efb9-3caf-8909-abd67584e37f ;
+        list:hasNext      inst:add8dfb5-f6bd-37ea-95f2-33b043a79cb8 .
+
+inst:add8dfb5-f6bd-37ea-95f2-33b043a79cb8
+        rdf:type          ifcowl:IfcPositiveInteger_List_List ;
+        list:hasContents  inst:bf1342dd-36b4-3385-856b-f6dd44158370 ;
+        list:hasNext      inst:6a838ccc-fea5-3783-82b3-e3ddcd264695 .
+
+inst:6a838ccc-fea5-3783-82b3-e3ddcd264695
+        rdf:type          ifcowl:IfcPositiveInteger_List_List ;
+        list:hasContents  inst:9fab37cc-b090-3f94-8c36-446f386f3750 ;
+        list:hasNext      inst:ba8b0950-d315-3e7e-835d-0caf8a6fdf72 .
+
+inst:ba8b0950-d315-3e7e-835d-0caf8a6fdf72
+        rdf:type          ifcowl:IfcPositiveInteger_List_List ;
+        list:hasContents  inst:0e48729a-1562-3fa8-aec0-3364825e1035 ;
+        list:hasNext      inst:395a75ee-5966-3e1e-8313-c1815aff8f03 .
+
+inst:395a75ee-5966-3e1e-8313-c1815aff8f03
+        rdf:type          ifcowl:IfcPositiveInteger_List_List ;
+        list:hasContents  inst:f866d4bf-15b2-39c7-9843-ecf2cc433c27 ;
+        list:hasNext      inst:6a50bc04-2b4c-3eae-bae3-7b5660e8eaec .
+
+inst:6a50bc04-2b4c-3eae-bae3-7b5660e8eaec
+        rdf:type          ifcowl:IfcPositiveInteger_List_List ;
+        list:hasContents  inst:231483ae-eb30-3ecf-9421-f12958c2ffc5 ;
+        list:hasNext      inst:6f16b226-ae04-36a7-88b9-3194394a7f80 .
+
+inst:6f16b226-ae04-36a7-88b9-3194394a7f80
+        rdf:type          ifcowl:IfcPositiveInteger_List_List ;
+        list:hasContents  inst:b1965199-3f4b-30ea-881d-0c8520d832ac ;
+        list:hasNext      inst:b3ba24ed-e29a-3d49-9ca9-76c2cbabf0f7 .
+
+inst:b3ba24ed-e29a-3d49-9ca9-76c2cbabf0f7
+        rdf:type          ifcowl:IfcPositiveInteger_List_List ;
+        list:hasContents  inst:f7eb6e7e-76e4-3e10-84e2-e8a8e0a17224 ;
+        list:hasNext      inst:f895c5f0-90f0-381e-8330-0d4b0c921557 .
+
+inst:f895c5f0-90f0-381e-8330-0d4b0c921557
+        rdf:type          ifcowl:IfcPositiveInteger_List_List ;
+        list:hasContents  inst:3006b780-857f-37fc-8b50-763f70258e68 .
+
+inst:6b7c143d-eec3-3aad-abd5-d5551640b72a
+        rdf:type              ifcowl:IfcCartesianPointList3D ;
+        express:hasExpressID  1022 .
+
+inst:26ce6b92-c31c-397e-9e13-9ae1fd04387e
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:1fb9198f-2205-3dfe-9536-2c487e914ceb
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:8877a3d9-b111-3d04-879c-b82c68831b5c
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:fba6fc10-f6f0-3344-87d5-b6909f63b621
+        rdf:type           ifcowl:IfcLengthMeasure ;
+        express:hasDouble  "-500."^^xsd:double .
+
+inst:26ce6b92-c31c-397e-9e13-9ae1fd04387e
+        list:hasContents  inst:fba6fc10-f6f0-3344-87d5-b6909f63b621 ;
+        list:hasNext      inst:1fb9198f-2205-3dfe-9536-2c487e914ceb .
+
+inst:1fb9198f-2205-3dfe-9536-2c487e914ceb
+        list:hasContents  inst:fba6fc10-f6f0-3344-87d5-b6909f63b621 ;
+        list:hasNext      inst:8877a3d9-b111-3d04-879c-b82c68831b5c .
+
+inst:8877a3d9-b111-3d04-879c-b82c68831b5c
+        list:hasContents  inst:1ff59b47-01d5-330f-a362-5cef6cf05fd9 .
+
+inst:0bd59c0c-a8ab-325d-9268-1f4cb8b81d13
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:22a20875-16c4-3dd8-876c-1b8e4e959c8d
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:8836d88a-9e19-3cc4-adfd-51bbd332bed3
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:d4e9e862-2d73-367c-8889-6ba51a175ca5
+        rdf:type           ifcowl:IfcLengthMeasure ;
+        express:hasDouble  "500."^^xsd:double .
+
+inst:0bd59c0c-a8ab-325d-9268-1f4cb8b81d13
+        list:hasContents  inst:d4e9e862-2d73-367c-8889-6ba51a175ca5 ;
+        list:hasNext      inst:22a20875-16c4-3dd8-876c-1b8e4e959c8d .
+
+inst:22a20875-16c4-3dd8-876c-1b8e4e959c8d
+        list:hasContents  inst:fba6fc10-f6f0-3344-87d5-b6909f63b621 ;
+        list:hasNext      inst:8836d88a-9e19-3cc4-adfd-51bbd332bed3 .
+
+inst:8836d88a-9e19-3cc4-adfd-51bbd332bed3
+        list:hasContents  inst:1ff59b47-01d5-330f-a362-5cef6cf05fd9 .
+
+inst:5e81430f-cb4b-386d-8e4b-9f4a7ae5a3e0
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:f5ad48a5-cd51-376b-8d97-eca519dbec76
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:4d9f3cc4-b433-37bc-991e-e833fed1d10f
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:5e81430f-cb4b-386d-8e4b-9f4a7ae5a3e0
+        list:hasContents  inst:d4e9e862-2d73-367c-8889-6ba51a175ca5 ;
+        list:hasNext      inst:f5ad48a5-cd51-376b-8d97-eca519dbec76 .
+
+inst:f5ad48a5-cd51-376b-8d97-eca519dbec76
+        list:hasContents  inst:d4e9e862-2d73-367c-8889-6ba51a175ca5 ;
+        list:hasNext      inst:4d9f3cc4-b433-37bc-991e-e833fed1d10f .
+
+inst:4d9f3cc4-b433-37bc-991e-e833fed1d10f
+        list:hasContents  inst:1ff59b47-01d5-330f-a362-5cef6cf05fd9 .
+
+inst:eeaf3cdd-1237-32d9-89de-6cb24cbd63df
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:1dd12dbf-3bef-39e6-89ad-9a145fce5b23
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:6e337a59-cfa6-3a5e-adce-13bbf0a5484f
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:eeaf3cdd-1237-32d9-89de-6cb24cbd63df
+        list:hasContents  inst:fba6fc10-f6f0-3344-87d5-b6909f63b621 ;
+        list:hasNext      inst:1dd12dbf-3bef-39e6-89ad-9a145fce5b23 .
+
+inst:1dd12dbf-3bef-39e6-89ad-9a145fce5b23
+        list:hasContents  inst:d4e9e862-2d73-367c-8889-6ba51a175ca5 ;
+        list:hasNext      inst:6e337a59-cfa6-3a5e-adce-13bbf0a5484f .
+
+inst:6e337a59-cfa6-3a5e-adce-13bbf0a5484f
+        list:hasContents  inst:1ff59b47-01d5-330f-a362-5cef6cf05fd9 .
+
+inst:c43fee96-5dd3-3414-bd88-7b16cad7fa21
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:6eae78df-bcb0-3360-9431-a2df3ae5c75a
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:a774a365-308d-3d25-a5d7-24344b8036b1
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:c43fee96-5dd3-3414-bd88-7b16cad7fa21
+        list:hasContents  inst:fba6fc10-f6f0-3344-87d5-b6909f63b621 ;
+        list:hasNext      inst:6eae78df-bcb0-3360-9431-a2df3ae5c75a .
+
+inst:6eae78df-bcb0-3360-9431-a2df3ae5c75a
+        list:hasContents  inst:fba6fc10-f6f0-3344-87d5-b6909f63b621 ;
+        list:hasNext      inst:a774a365-308d-3d25-a5d7-24344b8036b1 .
+
+inst:05ecdd7e-6a5a-305f-ad81-8f6067670d30
+        rdf:type           ifcowl:IfcLengthMeasure ;
+        express:hasDouble  "2000."^^xsd:double .
+
+inst:a774a365-308d-3d25-a5d7-24344b8036b1
+        list:hasContents  inst:05ecdd7e-6a5a-305f-ad81-8f6067670d30 .
+
+inst:f99f2821-e695-3916-bfca-b81074790738
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:011a5303-34e2-3f05-917b-8715de7665c0
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:3b1d3c67-f924-3f98-96a2-fdf4bd75fb77
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:f99f2821-e695-3916-bfca-b81074790738
+        list:hasContents  inst:d4e9e862-2d73-367c-8889-6ba51a175ca5 ;
+        list:hasNext      inst:011a5303-34e2-3f05-917b-8715de7665c0 .
+
+inst:011a5303-34e2-3f05-917b-8715de7665c0
+        list:hasContents  inst:fba6fc10-f6f0-3344-87d5-b6909f63b621 ;
+        list:hasNext      inst:3b1d3c67-f924-3f98-96a2-fdf4bd75fb77 .
+
+inst:3b1d3c67-f924-3f98-96a2-fdf4bd75fb77
+        list:hasContents  inst:05ecdd7e-6a5a-305f-ad81-8f6067670d30 .
+
+inst:83522016-af07-3dfd-9603-5c8d58049276
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:dae79ca4-c840-388f-a62c-7fe3e8316e47
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:a98b9e87-cabe-35b6-a61b-a868c24d004e
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:83522016-af07-3dfd-9603-5c8d58049276
+        list:hasContents  inst:d4e9e862-2d73-367c-8889-6ba51a175ca5 ;
+        list:hasNext      inst:dae79ca4-c840-388f-a62c-7fe3e8316e47 .
+
+inst:dae79ca4-c840-388f-a62c-7fe3e8316e47
+        list:hasContents  inst:d4e9e862-2d73-367c-8889-6ba51a175ca5 ;
+        list:hasNext      inst:a98b9e87-cabe-35b6-a61b-a868c24d004e .
+
+inst:a98b9e87-cabe-35b6-a61b-a868c24d004e
+        list:hasContents  inst:05ecdd7e-6a5a-305f-ad81-8f6067670d30 .
+
+inst:32c89635-9d9d-3b95-bc6a-4053b4e3d5d3
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:5241ef53-eb40-3a76-b0af-ac53b204664a
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:e4b63476-1fdb-3860-90ae-b0f2e5adc8ff
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:32c89635-9d9d-3b95-bc6a-4053b4e3d5d3
+        list:hasContents  inst:fba6fc10-f6f0-3344-87d5-b6909f63b621 ;
+        list:hasNext      inst:5241ef53-eb40-3a76-b0af-ac53b204664a .
+
+inst:5241ef53-eb40-3a76-b0af-ac53b204664a
+        list:hasContents  inst:d4e9e862-2d73-367c-8889-6ba51a175ca5 ;
+        list:hasNext      inst:e4b63476-1fdb-3860-90ae-b0f2e5adc8ff .
+
+inst:e4b63476-1fdb-3860-90ae-b0f2e5adc8ff
+        list:hasContents  inst:05ecdd7e-6a5a-305f-ad81-8f6067670d30 .
+
+inst:860f35c8-1342-3536-969e-4559517bc866
+        rdf:type  ifcowl:IfcLengthMeasure_List_List .
+
+inst:6b7c143d-eec3-3aad-abd5-d5551640b72a
+        ifcowl:coordList_IfcCartesianPointList3D  inst:860f35c8-1342-3536-969e-4559517bc866 .
+
+inst:860f35c8-1342-3536-969e-4559517bc866
+        list:hasContents  inst:26ce6b92-c31c-397e-9e13-9ae1fd04387e ;
+        list:hasNext      inst:2fa7bfbf-5a8f-3d37-82bb-31d64b743562 .
+
+inst:2fa7bfbf-5a8f-3d37-82bb-31d64b743562
+        rdf:type          ifcowl:IfcLengthMeasure_List_List ;
+        list:hasContents  inst:0bd59c0c-a8ab-325d-9268-1f4cb8b81d13 ;
+        list:hasNext      inst:8dce3194-39a0-3e94-b8bf-b6e8774648f2 .
+
+inst:8dce3194-39a0-3e94-b8bf-b6e8774648f2
+        rdf:type          ifcowl:IfcLengthMeasure_List_List ;
+        list:hasContents  inst:5e81430f-cb4b-386d-8e4b-9f4a7ae5a3e0 ;
+        list:hasNext      inst:eb247ffb-006c-3113-ac20-95310c511821 .
+
+inst:eb247ffb-006c-3113-ac20-95310c511821
+        rdf:type          ifcowl:IfcLengthMeasure_List_List ;
+        list:hasContents  inst:eeaf3cdd-1237-32d9-89de-6cb24cbd63df ;
+        list:hasNext      inst:2d949631-034b-3a70-9d5f-d88b1008f1a6 .
+
+inst:2d949631-034b-3a70-9d5f-d88b1008f1a6
+        rdf:type          ifcowl:IfcLengthMeasure_List_List ;
+        list:hasContents  inst:c43fee96-5dd3-3414-bd88-7b16cad7fa21 ;
+        list:hasNext      inst:c616b689-40cd-3968-802a-4a5cbec0096a .
+
+inst:c616b689-40cd-3968-802a-4a5cbec0096a
+        rdf:type          ifcowl:IfcLengthMeasure_List_List ;
+        list:hasContents  inst:f99f2821-e695-3916-bfca-b81074790738 ;
+        list:hasNext      inst:fd0e78b3-b425-328f-b2c7-9e80ad758acc .
+
+inst:fd0e78b3-b425-328f-b2c7-9e80ad758acc
+        rdf:type          ifcowl:IfcLengthMeasure_List_List ;
+        list:hasContents  inst:83522016-af07-3dfd-9603-5c8d58049276 ;
+        list:hasNext      inst:f8ac7b40-dc3b-3420-9549-95908cb36305 .
+
+inst:f8ac7b40-dc3b-3420-9549-95908cb36305
+        rdf:type          ifcowl:IfcLengthMeasure_List_List ;
+        list:hasContents  inst:32c89635-9d9d-3b95-bc6a-4053b4e3d5d3 .
+
+inst:4d659b5c-eb31-3b39-8bb7-3561860acfa6
+        rdf:type              ifcowl:IfcRelContainedInSpatialStructure ;
+        express:hasExpressID  10000 .
+
+inst:2344507e-a660-3692-81bd-989dbb8097d7
+        rdf:type           ifcowl:IfcGloballyUniqueId ;
+        express:hasString  "2TnxZkTXT08eDuMuhUUFNy" .
+
+inst:4d659b5c-eb31-3b39-8bb7-3561860acfa6
+        ifcowl:globalId_IfcRoot  inst:2344507e-a660-3692-81bd-989dbb8097d7 .
+
+inst:60111179-d102-3600-8836-338b843d879b
+        rdf:type           ifcowl:IfcLabel ;
+        express:hasString  "Physical model" .
+
+inst:4d659b5c-eb31-3b39-8bb7-3561860acfa6
+        ifcowl:name_IfcRoot  inst:60111179-d102-3600-8836-338b843d879b ;
+        ifcowl:relatedElements_IfcRelContainedInSpatialStructure  inst:8ee1982e-8090-35fb-9b11-784e5274e1c4 ;
+        ifcowl:relatingStructure_IfcRelContainedInSpatialStructure  inst:5b8201df-0150-3561-af54-dd99445430f9 .
